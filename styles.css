@@ -1,0 +1,647 @@
+/*-------------------------------------------
+---------------------HEADER------------------
+---------------------------------------------*/
+* {
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+}
+
+header {  
+  background: rgb(21 25 31);
+  height: 600px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.title {
+  grid-column-start: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.title-header h1{
+  color: #0278ae;
+}
+.title-header {
+  color: white;
+  font-size: 200%;
+  grid-column-start: 1;
+}
+.title-header p {
+  font-size: 75%;
+}
+.picture__octocat {
+  padding-top: 80px;
+  max-width: 100%;
+  width: 450px;
+  height: 430px;
+  grid-column-start: 2;
+}
+
+/*--------------------------------------------
+---------------DIV BAR MENU-------------------
+ ---------------------------------------------*/
+
+
+.list {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 10% 60% 20% 10%;
+  align-items: center;
+  background: rgb(29 35 43);
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+}
+
+/*----------left-----------*/
+.list_ubication {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.index {
+  grid-column-start: 2;
+}
+.index summary {
+  padding: 10px;
+  color: white;
+  list-style: none;
+  font-size: 110%;
+}
+.index summary:hover{
+  color: #46a2fd;
+  transition: color 400ms;
+}
+.index ul {
+  background-color: white;
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 200px;
+  margin: 0px 0px 0px 5px;
+  border-radius: 10px;
+  opacity: 80%;
+}
+.index:hover ul,
+ul:hover {
+  display: block;
+}
+.index li {
+  background-color: white;
+  margin: 15px 10px 5px 10px;
+}
+.index li a {
+  background-color: white;
+  color: #000000;
+  text-decoration: none;
+}
+.index li a:hover {
+  text-decoration: underline;
+}
+.picture-list{
+  grid-column-start: 1;
+}
+/*---------right----------*/
+.options{
+  grid-row-start: 2;
+  grid-column-start: 3;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+#ctn-icon-search{
+  grid-column-start: 1;
+ /* left: 850px;
+   position: fixed;*/
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0278ae;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#ctn-icon-search i{
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+#icon-search:hover{
+    color: gray;
+}
+
+
+#ctn-bars-search{
+grid-column-start: 1;
+    position: absolute;
+    height: 20px;
+/*    top: -4px;*/
+    width: 35%;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+   /* right: 0px;*/
+ 
+}
+
+#ctn-bars-search input{
+    display: block;
+    height: 20px;
+    width: 35%;
+    margin: auto;
+    padding: 5px;
+    font-size: 15px;
+    outline: 0;
+    border-radius: 5px;
+    border: solid white 1px;
+    }
+
+#box-search{
+    position: fixed;
+    top: 80px;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 30%;
+    background: #fff;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+    list-style: none;
+}
+
+#box-search li a{
+    display: block;
+    width: 100%;
+    color: #777777;
+    padding: 12px 20px;
+}
+
+#box-search li a:hover{
+    background: #f3f3f3;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #777777;
+    }
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 7;
+    display: none;
+}
+
+/*----show menu styles--*/
+#icon-menu{
+  grid-column-start: 2;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+  /*  right: 20px;*/
+/*    top: 10px;*/
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  /*  left: 1250px;
+    position: fixed;*/
+}
+
+#menu_icon:hover{
+    color: gray;
+}
+
+
+/*--------------------------------*/
+.reference a {
+  text-decoration: none;
+  color: white;
+  font-size: 110%;
+  padding: 10px;
+}
+.reference a:hover{
+  color: #46a2fd;
+  transition: color 400ms;
+}
+/*---------------------------------*/
+
+
+/*-----------------------------------------------
+---------------section what is git---------------*/
+/*----recomendations git and github blocks-------*/
+.block-recomendation {
+  margin-top: 100px;
+  color: white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+.recomendation {
+  grid-column-start: 2;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+  color: #0e0e0e;
+  font-size: 90%;
+}
+.recomendation h3 {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: grey;
+}
+.recomendation-git-github {
+  padding: 40px;
+  padding-bottom: 40px;
+  background: #0e0e0e;
+  grid-column-start: 2;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+.block-recomendation h1 {
+  display: flex;
+  justify-content: center;
+}
+.block-recomendation p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.button__git-github {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.button-git {
+  height: 40px;
+  width: 110px;
+  color: white;
+  background: #0e0e0e;
+  border: solid white 2px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: bold;
+}
+.button-github {
+  height: 40px;
+  width: 150px;
+  color: white;
+  background: #0e0e0e;
+  border: solid white 2px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/*what is git*/
+.what-is-git {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 10% 38% 4% 38% 10%;
+}
+.what_is_git {
+  grid-column-start: 2;
+  border: solid #0e0e0e0e 2px;
+  border-radius: 10px;
+  padding: 30px 30px;
+}
+.what_is_git2 {
+  grid-column-start: 4;
+  border: solid #0e0e0e0e 2px;
+  border-radius: 10px;
+  padding: 30px 30px;
+}
+.what_is_git p,
+.what_is_git2 p {
+  margin-top: 10px;
+  font-size: 110%;
+  text-align: inherit;
+}
+
+/*--------------list to install git--------------*/
+.list__install-git {
+  margin-top: 100px;
+  height: 90px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  margin-bottom: 200px;
+}
+.block-list_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0px 0px 0px;
+}
+.block-list h2 {
+  margin-left: 50px;
+}
+
+/*---list install git---*/
+.install-git summary {
+  margin: 10px 10px 0px 10px;
+  padding: 5px;
+  color: #0278ae;
+  list-style: none;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 50px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #0278ae 1px;
+  text-align: center;
+}
+.install-git ul {
+  background-color: white;
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 40%;
+  margin: 5px 0px 0px 5px;
+  border-radius: 10px;
+  opacity: 90%;
+}
+.install-git:hover ul,
+ul:hover {
+  display: block;
+}
+.install-git p {
+  margin: 8px 10px 8px 10px;
+}
+
+.install-git li {
+  background-color: white;
+  margin: 15px 10px 5px 10px;
+  color: #000000;
+}
+.install-git a {
+  color: #000000;
+  text-decoration: underline;
+}
+.cat_list {
+  width: 270px;
+  height: 270px;
+  display: grid;
+  grid-column-start: 2;
+}
+/*-----------------------------------------------
+------------SECTION WHAT IS GITHUB----------------
+-------------------------------------------------*/
+.main-github {
+  margin-top: 100px;
+  height: 400px;
+  width: 100vw;
+  background: rgb(21 25 31);;
+  display: grid;
+  grid-template-rows: 30% 40% 30%;
+  grid-template-columns: 10% 80% 10%;
+}
+.picture__space {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  grid-column-start: 2;
+  grid-row-start: 0;
+}
+.picture-space {
+  width: 130%;
+  height: 130%;
+}
+.what_is-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.text-what-is_github {
+  margin: 10px;
+}
+.text-what-is_github summary {
+  background: #0278ae;
+  color: white;
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.text-what-is_github a {
+  margin-top: 5px;
+  font-size: 15px;
+}
+.text-what-is_github ul {
+  background-color: white;
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 40%;
+  margin: 5px 0px 0px 5px;
+  border-radius: 10px;
+  opacity: 90%;
+}
+.text-what-is_github:hover ul,
+ul:hover {
+  display: block;
+}
+.text-what-is_github p {
+  margin: 8px 10px 8px 10px;
+}
+
+/*-----------------------------------------
+------------SECTION HOW USE GIT--------------
+--------------------------------------------*/
+.repository {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 20% 80%;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+.repository-title {
+  display: flex;
+  justify-content: center;
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+.block-repo {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 48% 4% 48%;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.picture__team {
+  grid-column-start: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.picture-team {
+  height: 100%;
+  width: 100%;
+}
+.repo {
+  grid-column-start: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 20px;
+  border: solid #0e0e0e0e 2px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 300px;
+}
+.repo p {
+  color: #0e0e0e;
+  padding-top: 10px;
+}
+.git-configure{
+  margin-top: 20px;
+}
+.git-configure summary{
+padding: 5px;
+color: #0278ae;
+font-size: 16px;
+border: solid #0278ae 2px;
+border-radius: 10px;
+height: 50px;
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.git-configure ul{
+background-color: white;
+display: none;
+position: absolute;
+width: 300px;
+border-radius: 10px;
+opacity: 90%;
+border: solid #0e0e0e0e 2px;
+padding: 0px;
+}
+.git-configure:hover ul, ul:hover{
+display: block;
+}
+.git-configure p{
+  background-color: white;
+  padding: 10px;
+}
+/*---------------------start git---------------------------*/
+.blocks-commands-info {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 10% 38% 4% 38% 10%;
+}
+.information {
+  grid-column-start: 2;
+  border: so121lid #0e0e0e0e 2px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.information h3 {
+  margin: 10px 10px;
+}
+.start-git git_command{
+  display: flex;
+  justify-content: center;
+}
+.git_command {
+  background: #0e0e0e;
+  color: white;
+  width 60%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: inherit;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px 5px;
+}
+.files-status {
+  grid-column-start: 4;
+  background: #28a745;
+  color: white;
+  text-align: inherit;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+.files-status li {
+  padding-top: 5px;
+}
+.picture-cycle_work{
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  margin-top: 20px;
+}
+.picture-work-cycle-one{
+  grid-column-start: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.work-cycle-one{
+  height: 80%;
+  width: 70%;
+}
+.picture-branch{
+  height: 350px;
+  width: 200px;
+  padding-left: 80px;
+}
+.branches_picture{
+height: 350px;
+width: 200px;
+}

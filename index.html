@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git and GitHub</title>
+
+  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="responsive.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!--#######DIV BAR MENU#######-->
+ <div class="list">
+
+            <!--right-->
+      <div class="list_ubication">
+
+            <img class="picture-list" src="./pictures/icons8-github-48.png" alt="logo">
+        <div class="index">
+            <summary><b>Index</b></summary>
+            <ul>
+                <li><a href="#what-is-git"><b>What is Git?</b></a></li>
+                <hr>
+                <li><a href="#list__install-git"><b>How install Git</b></a> </li>
+                <li><a href="/"><b>Install Git in Windows</b></a> </li>
+                <li><a href="/"><b>Install Git in IOS</b></a> </li>
+                <li><a href="/"><b>Install Git in Linux</b></a> </li>
+                <hr>
+                <li><a href="#main-github"><b>What is GitHub?</b></a></li>
+                <li><a href="#main-github"><b>Why should use Git and GitHub?</b></a></li>
+            </ul>
+        </div>
+
+          <div class="reference">
+            <a href="#start-git"><b>About Git</b></a>
+          </div>
+
+          <div class="reference">
+            <a href="#"><b>About GitHub</b></a>
+          </div>
+      </div>
+
+      <!--left-->
+      <div class="options">
+
+                    <!--MENU-->
+               <div id="icon-menu">
+                  <i class="fas fa-bars" id="menu_icon"></i>
+               </div>
+
+                    <!--BROWSER-->
+            <div id="ctn-icon-search">
+                  <i class="fas fa-search" id="icon-search"></i>
+               </div>
+               <div id="ctn-bars-search">
+                  <input type="text" id="inputSearch" autocomplete="off" placeholder="Search">
+            </div>
+          </div>
+
+          <!--list block search--> 
+        <ul id="box-search">
+          <li><a href="#command-init"><i class="fas fa-search"></i>git init</a></li>
+          <li><a href="#command-status"><i class="fas fa-search"></i>git status</a></li>
+          <li><a href="#command-add"><i class="fas fa-search"></i>git add</a></li>
+          <li><a href="#command-reset"><i class="fas fa-search"></i>git reset</a></li>
+          <li><a href="#command-commit"><i class="fas fa-search"></i>git commit</a></li>
+          <li><a href="#command-rm"><i class="fas fa-search"></i>git rm</a></li>
+          <li><a href="#command-branch"><i class="fas fa-search"></i>git branch</a></li>
+          <li><a href="#command-checkout"><i class="fas fa-search"></i>git checkout</a></li>
+          <li><a href="#command-merge"><i class="fas fa-search"></i>git merge</a></li>
+        </ul>
+
+       <div id="cover-ctn-search"></div>
+  </div>
+
+   <!--menu-->
+    
+
+<header>
+          <div class="title">
+            <div class="title-header">
+              <h1><b>Git and GitHub</b></h1>
+              <p>Here you will learn what Git and Github <br />are and how to work with this version control system<br/> and create your repositories.</p>
+            </div>
+          </div>
+         <img src="./pictures/jetpacktocat.png" alt="octocat" class="picture__octocat">
+</header>
+
+<!--section git-->
+<div class="block-recomendation">
+  <div class="recomendation" >
+    <h1>Get started with Git and GitHub </br></h1>
+    <h3>Learn</h3>
+    <h3>Work</h3>
+    <h3>Share</h3>
+    <h3>and more!</h3>
+  </div>
+
+  <div class="recomendation-git-github">
+
+    <h1><b>Git</b></h1>
+    <p>It is the best way for developers can keep control of the version of their project.</br>
+        You will be able to branch your project. return any previous version of your code and use any plain text or programming language. </br>
+        It is ideal for working with companies and collaborating on projects open source since you can link your local repository with a remote one.</p>
+    <div class="button__git-github">
+      <a href="#" class="button-git">Git page</a>
+    </div>
+  </div>
+</div>
+
+<main class="what-is-git" id="what-is-git">
+
+  <div class="what_is_git">
+      <h1>What is Git?</h1>
+      <p>Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers,
+       but it can be used to track changes in any set of files. </br>Its goals include speed, data integrity, and support for distributed, non-linear workflowsclarification needed.
+       Git was created by Linus Torvalds in 2005 for development the Linux kernel, with other kernel developers contributing to its beginning.</br> Since 2005, Junio Hamano has been the core maintainer. As with most other distributed version-control systems,
+       and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server.
+       Git is free and open-source software distributed under GNU General Public.</p>
+
+  </div>
+
+  <div class="what_is_git2">
+    <p >Git is a type of version control system used to maintain code.</br>
+       To gain a good understanding of why Git is useful, we must first understand the purpose of a version control system. In technology, version control systems are software tools used to track changes to code over time.
+       Version control systems (VCS) store a list of all the changes made to code in a database, alongside who made those changes and a description of the changes made. In almost every project—large and small—version control plays a role.
+       For teams, having a strong VCS set up is specially important. This is the case for a number of reasons. First, version control systems </br>allow the team to keep track of changes over time, so if something goes wrong they will have a record of the changes and events which lead up to the problem the team is encountering.
+       Second, VCS allow a team to store different versions of their project. </br>So, as soon as a new release is ready, it can be stored in a version control platform alongside a name, a description of the release, and any other relevant metadata (such as the name of the author, and so on).
+       Even individual developers can make use of version control systems. This is because version control’s primary function is to track code, and even if you are working alone, you will likely still want to keep a record of your code and how it has evolved.</p>
+  </div>
+
+</main>
+
+<!--list git installation-->
+<main class="list__install-git" id="list__install-git">
+
+<div class="block-list">
+
+  <h2><b>Git installation</b></h2>
+
+  <div class="install-git">
+    <summary><b>Install in Windows</b></summary>
+
+      <ul >
+        <p>If you want to install git on Windows. You will need to go to a browser and download the git software on the <a href="https://git-scm.com/download/win">Git oficial page</br>
+        </a> and follow the next steps.</p>
+        <hr>
+          <li><b>Step 1:</b> Next to dowload Git Browse to the download location (or use the download shortcut in your browser).</br> Double-click the file to extract and launch the installer.</li>
+          <li><b>Step 2:</b> Now allow the app to make changes to your device by clicking Yes on the User Account Control dialog that opens.</li>
+          <li><b>Step 3:</b> Review the GNU General Public License, and when you’re ready to install, click Next.</li>
+          <li><b>Step 4:</b> The installer will ask you for an installation location.</br> Leave the default, unless you have reason to change it, and click Next.</li>
+          <li><b>Step 5:</b> A component selection screen will appear.</br> Leave the defaults unless you have a specific need to change them and click Next.</li>
+          <li><b>Step 6:</b> The installer will offer to create a start menu folder. Simply click Next.</li>
+          <li><b>Step 7:</b> Select a text editor you’d like to use with Git. </br>Use the drop-down menu to select Notepad++ (or whichever text editor you prefer) and click Next.</li>
+          <li><b>Step 8:</b> This installation step allows you to change the PATH environment.</br> The PATH is the default set of directories included when you run a command from the command line.</br> Leave this on the middle selection and click Next.</li>
+          <li><b>Step 9:</b> The next option relates to server certificates. Most users should use the default.</br> If you’re working in an Active Directory environment, you may need to switch to Windows Store certificates. Click Next.</li>
+          <li><b>Step 10:</b> The next selection converts line endings. It is recommended that you leave the default selection. </br>This relates to the way data is formatted and changing this option may cause problems. Click Next</li>
+          <li><b>Step 11:</b> Choose the terminal emulator you want to use. The default MinTTY is recommended, for its features. Click Next.</li>
+          <li><b>Step 12:</b>The default options are recommended, however this step allows you to decide which extra option you would like to enable. </br>If you use symbolic links, which are like shortcuts for the command line, tick the box. Click Next.</li>
+          <li><b>Step 13:</b> Depending on the version of Git you’re installing, it may offer to install experimental features.</br> At the time this article was written, the option to include interactive options was offered. Unless you are feeling adventurous, leave them unchecked and click Install.</li>
+          <li><b>Step 14:</b> Once the installation is complete, tick the boxes to view the Release Notes or Launch Git Bash, then click Finish.</li>
+      </ul>
+    
+  </div>
+
+<div class="install-git">
+    <summary><b>Install in iOS</b></summary>
+    <ul>
+      <p> iOS usually have Git for default in your MAC open Terminal and enter  the command <b>(git --version)</b>. If you see git version followed by numbers, i.e., git 2.5.4 then you are good to go. If you don't have Git installed follow the next steps.</p>
+      <hr>
+      <li><b>Step 1:</b> Open Safari and browse to the <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git developer site.</a></li>
+      <li><b>Step 2:</b> Click on Mac OS X below Downloads.</li>
+      <li><b>Step 3:</b> Open the git-2.8.1-intel-universal-mavericks file in your Downloads folder.</li>
+      <li><b>Step 4:</b> Double click the git-2.8.1-intel-universal-mavericks.pkg file.</li>
+      <li><b>Step 5:</b> If you get a warning that says "“git-2.8.1-intel-universal-mavericks.pkg” can’t be opened because it is from an unidentified developer." Open Settings > Security & Privacy > General and click Open Anyway.</li>
+      <li><b>Step 6:</b> Click Continue, Install and enter your admin password.</li>
+      <li><b>Step 7:</b> Click Close.</li>
+      <p>Now open Terminal and enter git --version. You will see "git version 2.8.1".</p>
+    </ul>
+  </div>
+
+  <div class="install-git">
+    <summary><b>Install in Linux or another Unix distro</b></summary>
+    <ul>
+      <p>If you will install Git on Linux via a binary installer through the package management tool that comes with your distribution.</p>
+      <li>If you’re on <b>Fedora</b> or other closely related RPM-based distribution, like RHEL or <b>CentOS</b>, you can use dnf:</br><b>$ sudo dnf install git-all</b></li>
+      <li></br>If you happen to be on a Debian-based distribution, like Ubuntu, try using apt:</br><b>$ sudo apt install git-all</b></li>
+      <hr>
+      <h3></br>Installation For Other Unix Distributions</h3>
+      <li>Gentoo:</br><b># emerge –ask –verbose dev-vcs/git</b></li>
+      <li>Arch Linux:</br><b># pacman -S git</b></li>
+      <li>openSUSE:</br><b># zypper install git</b></li>
+      <li>Mageia:</br><b># urpmi git</b></li>
+      <li>Nix/NixOS:</br><b># nix-env -i git</b></li>
+      <li>FreeBSD:</br><b># pkg install git</b></li>
+      <li>OpenBSD:</br><b># pkg_add git</b></li>
+      <li>Alpine:</br><b>$ apk add git</b></li>
+      <li>Slitaz:</br><b>$ tazpkg get-install git</b></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cat_list">
+  <img src="./pictures/mcefeeline.jpg" alt="cat list" class="cat_list">
+</div>
+
+</main>
+
+                       <!--section github-->
+
+<div class="block-recomendation">
+  <div class="recomendation-git-github">
+      <h1><b>GitHub</b></h1>
+      <p>It is known as the social network of programmers. GitHub brings teams together to work through problems, move ideas forward, and learn from each other along the way.</p>
+    <div class="button__git-github">
+    <a href="https://github.com/" class="button-github">GitHub page</a>
+    </div>
+  </div>
+</div>
+
+<main class="main-github" id="main-github">
+  <div class="picture__space">
+    <img src="./pictures/space.svg" alt="picture-space" class="picture-space">
+  </div>
+  <div class="what_is-github">
+    <div class="text-what-is_github">
+      <summary>What is GitHub? </br> <a>Read more</a></summary>
+        <ul>
+          <p >It's a (collaborative development platform) to host projects using the Git version control sistem. it is mainly used for creating source code for computer programs. The software that runs GitHub was written in Ruby on Rails. ince junuary 2010, has operated under de name GitHub,inc.it was previously known as logical Awesome LLC. The code for projects hosted on GitHub is typically stored publicly.
+          On June 4, 2018 Microsoft bought GitHub for the amount of 7500 millions dollars, at the beginning the change of owner generated conserns and exit of some projects from this repository, howevwe they were not representative. GitHub continues to be the most important collaboration platform for Open Source projects.</p>
+        </ul>
+    </div>
+
+    <div class="text-what-is_github">
+      <summary>Why use GitHub? </br> <a>Read more</a> </summary>
+        <ul>
+          <p>A good GitHub profile can impress the interviwer. for thar reason Millions of developers use GitHub to share code and build businesses. In 2017, the Github community reached 24 million developers working across 67 million repositories.</p>
+        </ul>
+    </div>
+
+    <div class="text-what-is_github">
+      <summary>GitHub isn't just for Developers </br> <a>Read more</a></summary>
+      <ul>
+        <p>All this talk about how GitHub is ideal for programers may have you believing that they are the only ones who will find it useful. Although it's a lot less common, you can actually use GitHub for any type of files. If you have a team that is constantly making changes to a word document for example, you could use GitHub as you version contol system.this practice isn't common, since there are better alternatives in most cases, but it's sometimes to keep in mind. </p>
+      </ul>
+    </div>
+  </div>
+</main>
+
+                    <!--SECTION HOW USE GIT-->
+<div class="repository" id="start-git">
+  <div class="repository-title">
+    <h1>Start your local Reposity of your project</h1>
+  </div>
+
+  <div class="block-repo">
+    <div class="picture__team">
+      <img src="./pictures/team.svg" alt="picture-team" class="picture-team">
+    </div>
+    <div class="repo">
+      <h2>Repository</h2>
+      <p>A repository (usually abbreviated to "repo")  is a storage location for software packages. Often a table of contents is stored, as well as metadata. Repositories group packages so is a location where all the files for a particular project are stored. Each projects has its own repo, and you can access it with a unique URL.</p>
+     
+      <div class="git-configure">
+        <summary><b>Configure your Git</b></summary>
+        <ul>
+          <p>Remember that Git is optimized for teamwork, therefore, we must give you a little information about us. We should not do it every time we execute a command, it is enough to execute the following commands only once with your information:
+             <b class="git_command">$ git config --global user.email "your@email.com"</b>  
+             <b class="git_command">$ git config --global user.name "Your Name"</b>
+             There are many other Git configurations that you can find by running the git config --list command (or just git config for a more detailed explanation).</p>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <main class="blocks-commands-info">
+    <div class="information">
+      <h2>Basic work cycle in Git:</h2>
+      <p>To start a repository, that is, activate the Git version control system in your project, you just have to run the command.
+
+      <b class="git_command" id="command-init">$ git init</b>
+
+          This command will do two things: first, create a .git folder, where the entire database with atomic changes from our project will be saved; and second, create an area that we know as Staging,
+          which will temporarily save our files (when we execute a special command for that) and will allow us, later, to save these changes in the repository (also with a special command).</p>
+
+       <h3>Commands to move files between Git states:</h3>
+
+       <div>
+         <p><b class="git_command" id="command-status">$ git status</b> Allows us to see the status of all our files and folders.</p>
+         <p><b class="git_command" id="command-add">$ git add file-folder-mane</b> Helps us move files from untraked or unstaged to staged state. We can use git file-or-folder-name to add individual files and or folders or git add -A to move all files
+                                            in our project (both Untrackeds and Unstageds).</p>
+         <p><b class="git_command" id="command-reset">$ git reset HEAD</b> Helps us take files out of the staged state to return them to teyr previous state. If the file came from unstaged, the go back there. and the same was comming from untracked. </p>
+         <p><b class="git_command" id="command-commit">$ git commit -m "change name"</b> Helps us move files from Unstaged to traked. this is a special occation, the files have been saved or updated in the repository. 
+                                            Git will ask us to leave a menssage to remember the changes we made and we can use the -m argument to write it.</p>
+         <p><b class="git_command" id="command-rm">$ git rm</b> This command deeds one of the following arguments to be successful:
+                                            <ul>
+                                              <li><b class="git_command">$ git rm --cached</b> Move the files that we indicate to the Untraked state.</li>
+                                              <li><b class="git_command">$ git rm --force</b> Delete the files from Git and from te hard disk. Git keeps the record of the existence of the files, so we can recover them if necessary (but we must use more advanced commands).</li>
+                                            </ul></p>
+       </div>
+    </div>
+
+    <div class="files-status">
+      <h2>files status in Git:</h2>
+
+      <p>When we work with Git our files can live and move between 4 different states (when we work with remote repositories it can be more states):</p>
+
+        <ul>
+          <li><b>Tracked files:</b> These are the files that live inside Git, have no pending changes and their latest updates have been saved in the repository thanks to the git add and git commit commands.</b>
+          <li><b>Staged files:</b> These are files in Staging. They live inside Git and there is a record of them because they have been affected by the git add command, although not its latest changes. Git already knows about the existence of these latest changes, but they have not yet been definitively saved in the repository because the git commit command has yet to be executed.</li>
+          <li><b>Unstaged files:</b> Understand them as “Tracked but Unstaged” files. They are files that live inside Git but have not been affected by the git add command, much less by git commit. Git has a record of these files, but it is out of date, its latest versions are only stored on the hard drive.</li>
+          <li><b>Untracked files:</b> These are files that DO NOT live inside Git, only on the hard drive. They have never been affected by git add, so Git has no records of their existence.
+                           Remember that there is a very rare case where files have two states at the same time: staged and untracked. This happens when you save the changes to a file in the Staging area (with the git add command), but before committing to save the changes in the repository you make new changes that have not yet been saved in the Staging area (in Actually, everything still works the same but it's a bit fun).</li>
+        </ul>
+    </div>
+
+  </main>
+  
+<div class="picture-cycle_work">
+  <div class="picture-work-cycle-one">
+    <img src="pictures/descarga.png" alt="work-cycle-one" class="work-cycle-one">
+  </div>
+</div>
+
+<main class="blocks-commands-info">
+  <div class="information">
+    <h2>Branches and Merge:</h2>
+    <p><b class="git_command" id="commit-branch">$ git branch branch-name</b>When you start a repository, By defalul you are located in the master branch. This command creates a new branch where you will have a copy of your project and there you can make changes, correct bugs and do experiments, it does not affect your main branch. and if you want to add your changes to the main branch you can do a git merge.
+    <b class="git_command" id="command-checkout">$ git checkout branch-name</b>This command is to jump between branches, when you are located in a branch you can see only its state and not that of other branches, to see the changes of another branch and be able to modify it we use the git checkout.
+    <b class="git_command" id="command-merge">$ git merge branch-name</b>Whit this command you will can add the changes in a branch in another branch and this make a fussion whit the content to the 2 branches for example add the changes in your master branch.  
+    </p>
+  </div>
+
+  <div class="files-status">
+    <h2>What is a branch and how does a Merge work in Git?</h2>
+    <p>Git is a very accurate database with all the changes and growth that our project has had. Commits are the only way to keep track of changes. But branches amplify Git's potential much more.
+       All commits are applied on a branch.</br>
+       By default, we always start at the master branch (but you can rename it if you don't like it) and create new branches from there to create independent workflows.
+       Creating a new branch is about copying a commit (from any branch), passing it elsewhere (to another branch) and continuing the work of a specific part of our project without affecting the main workflow (which continues in the master branch or the main branch).
+       Development teams have a standard: Everything in the master branch goes to production, new features, characteristics and experiments go in a "development" branch (to join master when they are finally ready) and issues or errors are they fix on a "hotfix" branch to join master as soon as possible.
+       Creating a new branch is known as Checkout. Joining two branches is known as Merge.
+       We can create all the branches and commits we want. In fact, we can take advantage of the Git changelog to create branches, bring in old versions of the code, fix them, and combine them again to improve the project.
+       Just keep in mind that combining these branches (yes, “merging”) can create conflicts. Some files may be different in both branches. Git is very smart and can try to join these changes automatically, but it doesn't always work. In some cases, we are the ones who must resolve these conflicts "by hand"</p>
+    <div class="picture-branch">
+      <img src="./pictures/branches.png" alt="" class="branches_picture">
+    </div>
+  </div>
+</main>
+
+<script src="document.js"></script>
+</body>
+</html>
