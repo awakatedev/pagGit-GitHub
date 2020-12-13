@@ -59,6 +59,15 @@ a {
   color: white;
   font-size: 70%;
 }
+#sing-in-icon{
+margin-left: 10px;
+margin-bottom: 10px;
+font-size: 20px;
+text-decoration: none;
+}
+.registrer:hover{
+background-color: #28a770;
+}
 .picture__octocat {
   padding-top: 80px;
   max-width: 100%;
@@ -94,11 +103,16 @@ a {
 .index {
   grid-column-start: 2;
 }
+.index i{
+  margin-left: 5px;
+  margin-top: 5px;
+}
 .index summary {
   padding: 10px;
   color: white;
   list-style: none;
   font-size: 110%;
+  font-weight: bold;
 }
 .index summary:hover{
   color: #46a2fd;
@@ -317,7 +331,7 @@ grid-column-start: 1;
 }
 .button-git {
   height: 40px;
-  width: 110px;
+  width: 250px;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 40.7%, rgba(243,193,124,1) 79.7% );
    -webkit-background-clip: text;
      color: transparent;
@@ -329,9 +343,12 @@ grid-column-start: 1;
   font-family: oswald;
   font-weight: bold;
 }
+.button-git i{
+  margin-left: 10px;
+}
 .button-github {
   height: 40px;
-  width: 150px;
+  width: 250px;
   background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 40.7%, rgba(243,193,124,1) 79.7% );
    -webkit-background-clip: text;
      color: transparent;
@@ -342,6 +359,9 @@ grid-column-start: 1;
   font-size: 130%;
   font-family: oswald;
   font-weight: bold;
+}
+.button-github i{
+  margin-left: 10px;
 }
 
 /*what is git*/

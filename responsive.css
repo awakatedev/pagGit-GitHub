@@ -1,4 +1,6 @@
-/*------responsive desing-------*/
+/*-----------------------------------------
+------------RESPONSIVE DESIGN--------------
+-------------------------------------------*/
 
 @media only screen and (max-width: 700px) {
 
@@ -42,10 +44,15 @@ header
  justify-content: flex-start;
 }
 .index{
-  grid-column-start: 2
+  grid-column-start: 2;
+  font-size: 85%;
 }
-.index {
-  font-size: 90%;
+.reference{
+  font-size: 85%;
+}
+
+#ctn-icon-search{
+  background-color: transparent;
 }
 #ctn-bars-search{
   display: none;
@@ -54,11 +61,7 @@ header
 {
   display: none;
 }
-.div_search .icon
-{
 
-  background: #242c3c
-}
 .title
 {
   display: flex;
