@@ -192,11 +192,12 @@ grid-column-start: 1;
     z-index: 9;
     transition: all 600ms;
    /* right: 0px;*/
+  display: none;
  
 }
 
 #ctn-bars-search input{
-    display: block;
+  display: none; 
     height: 20px;
     width: 35%;
     margin: auto;

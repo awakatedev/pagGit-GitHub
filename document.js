@@ -25,7 +25,8 @@ box_search = document.getElementById("box-search");
 
 //Funcion para mostrar el buscador
 function mostrar_buscador() {
-  bars_search.style.top = "5px";
+  bars_search.style.display = "block";
+  inputSearch.style.display = "block";
   cover_ctn_search.style.display = "block";
   inputSearch.focus();
 
@@ -36,7 +37,8 @@ function mostrar_buscador() {
 
 //Funcion para ocultar el buscador
 function ocultar_buscador() {
-  bars_search.style.top = "-4px";
+  bars_search.style.display = "none";
+  inputSearch.style.display = "none";
   cover_ctn_search.style.display = "none";
   inputSearch.value = "";
   box_search.style.display = "none";
