@@ -11,6 +11,11 @@ header
   justify-content: center;
   height: 700px;
 }
+.button-sing-in{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 .list
 {
   display: grid;
@@ -36,9 +41,11 @@ header
   align-items: center;
  justify-content: flex-start;
 }
-.index
-{
+.index{
   grid-column-start: 2
+}
+.index {
+  font-size: 90%;
 }
 #ctn-bars-search{
   display: none;
@@ -57,7 +64,7 @@ header
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 0px;
+  margin: 8px;
 }
 
 .picture__octocat
@@ -96,17 +103,17 @@ header
   justify-content: space-around;
 }
 .block-list h2{
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .install-git summary{
   height: 40px;
-  width: 200px;
+  width: 150px;
 }
 .cat_list{
-  height: 200px;
-  width: 200px;
-  margin-top: 5px;
-  margin-right: 5px;
+  height: 170px;
+  width: 170px;
+  margin-top: 15px;
+  margin-right: 25px;
 }
 
 .what_is-github

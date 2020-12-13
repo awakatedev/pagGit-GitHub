@@ -36,6 +36,29 @@ a {
 .title-header p {
   font-size: 75%;
 }
+.button-sing-in
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.button-sing-in i{
+  margin-top: 15px;
+  font-size: 55%;
+  text-decoration: underline;
+}
+.registrer{
+  height: 60px;
+  width: 200px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #28a745;
+  color: white;
+  font-size: 70%;
+}
 .picture__octocat {
   padding-top: 80px;
   max-width: 100%;
@@ -295,29 +318,29 @@ grid-column-start: 1;
 .button-git {
   height: 40px;
   width: 110px;
-  color: white;
-  background: #0e0e0e;
-  border: solid white 2px;
-  border-radius: 8px;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 40.7%, rgba(243,193,124,1) 79.7% );
+   -webkit-background-clip: text;
+     color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 120%;
+  font-size: 130%;
+  font-family: oswald;
   font-weight: bold;
 }
 .button-github {
   height: 40px;
   width: 150px;
-  color: white;
-  background: #0e0e0e;
-  border: solid white 2px;
-  border-radius: 8px;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 40.7%, rgba(243,193,124,1) 79.7% );
+   -webkit-background-clip: text;
+     color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 120%;
+  font-size: 130%;
+  font-family: oswald;
   font-weight: bold;
 }
 
@@ -391,7 +414,7 @@ grid-column-start: 1;
   list-style: none;
   padding: 0px;
   position: absolute;
-  width: 40%;
+  width: 60%;
   margin: 5px 0px 0px 5px;
   border-radius: 10px;
   opacity: 90%;
@@ -476,7 +499,7 @@ ul:hover {
   list-style: none;
   padding: 0px;
   position: absolute;
-  width: 40%;
+  width: 60%;
   margin: 5px 0px 0px 5px;
   border-radius: 10px;
   opacity: 90%;
