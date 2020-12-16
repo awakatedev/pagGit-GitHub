@@ -1,31 +1,30 @@
-document.getElementById("icon-menu").addEventListener("click", mostrar_menu);
+//-------------MENU-------------
 
-function mostrar_menu() {
+document.getElementById("icon-menu").addEventListener("click", show_menu);
+
+function show_menu() {
   document
     .getElementById("move-content")
     .classList.toggle("move-container-all");
   document.getElementById("show-menu").classList.toggle("show-lateral");
 }
 
-//Buscador de contenido
+//-----------BROWSER---------------
 
-//Ejecutando funciones
-document
-  .getElementById("icon-search")
-  .addEventListener("click", mostrar_buscador);
+//Executing functions
+document.getElementById("icon-search").addEventListener("click", show_browser);
 document
   .getElementById("cover-ctn-search")
   .addEventListener("click", ocultar_buscador);
 
-//Declarando variables
-bars_search = document.getElementById("ctn-bars-search");
+//vars
 cover_ctn_search = document.getElementById("cover-ctn-search");
 inputSearch = document.getElementById("inputSearch");
 box_search = document.getElementById("box-search");
+icon_search = document.getElementById("icon-search");
 
-//Funcion para mostrar el buscador
-function mostrar_buscador() {
-  bars_search.style.display = "block";
+//-----Function show browser-------
+function show_browser() {
   inputSearch.style.display = "block";
   cover_ctn_search.style.display = "block";
   inputSearch.focus();
@@ -35,26 +34,24 @@ function mostrar_buscador() {
   }
 }
 
-//Funcion para ocultar el buscador
+//----Funcion para ocultar el buscador-----
 function ocultar_buscador() {
-  bars_search.style.display = "none";
   inputSearch.style.display = "none";
   cover_ctn_search.style.display = "none";
   inputSearch.value = "";
   box_search.style.display = "none";
 }
 
-//Creando filtrado de busqueda
-
+//executing function filtrer options
 document
   .getElementById("inputSearch")
-  .addEventListener("keyup", buscador_interno);
+  .addEventListener("keyup", internal_browser);
 
-function buscador_interno() {
+function internal_browser() {
   filter = inputSearch.value.toUpperCase();
   li = box_search.getElementsByTagName("li");
 
-  //Recorriendo elementos a filtrar mediante los "li"
+  //selection for filtrer "li"
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     textValue = a.textContent || a.innerText;

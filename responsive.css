@@ -4,237 +4,213 @@
 
 @media only screen and (max-width: 700px) {
 
-body{min-width: 100%;}
+  body {
+    min-width: 100%;
+  }
 
-header
-{
-  grid: none;
-  display: flex;
-  justify-content: center;
-  height: 700px;
-}
-.button-sing-in{
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-.list
-{
-  display: grid;
-  grid-template-columns: 5% 80% 10% 5%;
-  grid-template-rows:10% 80% 10%;
-  align-items: center;
+  header {
+    grid: none;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+  }
+  .button-sing-in {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 5% 75% 15% 5%;
+    align-items: center;
+  }
+  .options {
+    grid-column-start: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .list_ubication {
+    grid-column-start: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .index {
+    grid-column-start: 2;
+    font-size: 85%;
+  }
+  .reference {
+    font-size: 85%;
+  }
+  #ctn-icon-search {
+    background-color: transparent;
+    padding-right: 30px;
+  }
+  #ctn-bars-search {
+    display: none;
+  }
+  #inputSearch {
+    display: none;
+  }
 
-}
-.options
-{
-  grid-column-start: 3;
-  grid-row-start: 2;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  align-items: center;
-  justify-content: center;
-}
-.list_ubication
-{
-  grid-column-start: 2;
-  grid-row-start: 2;
-  display: flex;
-  align-items: center;
- justify-content: flex-start;
-}
-.index{
-  grid-column-start: 2;
-  font-size: 85%;
-}
-.reference{
-  font-size: 85%;
-}
+  .title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 8px;
+  }
 
-#ctn-icon-search{
-  background-color: transparent;
-}
-#ctn-bars-search{
-  ;
-}
-#inputSearch
-{
-  display: none;
-}
+  .picture__octocat {
+    display: none;
+  }
+  .recomendation {
+    display: flex;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+  }
+  .recomendation h3 {
+    display: inline;
+    margin-top: 10px;
+  }
+  .what-is-git {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    direction: ltr;
+  }
+  .what_is_git,
+  .what_is_git2 {
+    grid-column-start: 2;
+    margin-top: 50px;
+  }
 
-.title
-{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 8px;
-}
+  /*---list install git---*/
+  .list__install-git {
+    display: flex;
+    justify-content: space-around;
+  }
+  .block-list h2 {
+    margin-left: 15px;
+  }
+  .install-git summary {
+    height: 40px;
+    width: 150px;
+  }
+  .cat_list {
+    height: 170px;
+    width: 170px;
+    margin-top: 15px;
+    margin-right: 25px;
+  }
 
-.picture__octocat
-{
-  display: none;
-}
-.recomendation
-{
-  display: flex;
-  display: inline; 
-  justify-content: center;
-  text-align: center;
-  margin: 0px;
-}
-.recomendation h3
-{
-  display:inline;
-  margin-top: 10px;
-}
-.what-is-git
-{
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  direction: ltr;
-}
-.what_is_git, .what_is_git2
-{
-  grid-column-start: 2;
-  margin-top: 50px;
-}
-
-/*---list install git---*/
-.list__install-git
-{
-  display: flex;
-  justify-content: space-around;
-}
-.block-list h2{
-  margin-left: 15px;
-}
-.install-git summary{
-  height: 40px;
-  width: 150px;
-}
-.cat_list{
-  height: 170px;
-  width: 170px;
-  margin-top: 15px;
-  margin-right: 25px;
-}
-
-.what_is-github
-{
-  grid: none;
-}
-.text-what_is_github2
-{
-  grid: none;
-}
-/*----------------------------------------------------
-------------------SECTION GITHUB-----------------------
+  /*---------------------------------------------------
+----------------SECTION WHAT IS GITHUB-----------------
 ------------------------------------------------------*/
+  .what_is-github {
+    grid: none;
+  }
+  .text-what_is_github2 {
+    grid: none;
+  }
+  .picture__space {
+    display: none;
+  }
+  .what_is-github {
+    display: flex;
+    flex-direction: column;
+  }
 
-.picture__space
-{
-  display: none;
-}
-.what_is-github
-{
-  display: flex;
-  flex-direction: column;
-}
-/*---------------------repo---------------------*/
-.repository{
-  width: 100vw;
-  height: 500px;
-  display: grid;
-  grid-template-rows: 20% 80%;
-  grid-template-columns: 2% 96% 2%;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-.repository-title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  grid-row-start: 1;
-  grid-column-start: 2;
-}
-.block-repo{
-  grid-column-start: 2;
-  grid-row-start: 2;
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
+  /*---------------SETION REPOSITORY---------------------*/
+  .repository {
+    width: 100vw;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 2% 96% 2%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .repository-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+  .block-repo {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+  }
+  .picture__team {
+    display: none;
+  }
+  .repo {
+    grid-column-start: 2;
+    height: 400px;
+    margin-right: 0;
+  }
+  .git-configure {
+    margin-top: 10px;
+  }
+  .git-configure summary {
+    height: 30px;
+    width: 150px;
+  }
+  .git-configure ul {
+    width: 70%;
+  }
 
-}
-.picture__team
-{
- display: none;
-}
-.repo{
-  grid-column-start: 2;
-  height: 400px;
-  margin-right: 0;
-}
-.git-configure{
-  margin-top: 10px;
-}
-.git-configure summary{
-  height: 30px;
-  width: 150px;
-}
-.git-configure ul{
-  width: 70%;
-}
-
-/*--------------------------------------------
+  /*--------------------------------------------
 ------------------start git------------------
 ----------------------------------------------*/
-.blocks-commands-info
-{
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-.information
-{
-  grid-column-start: 1;
-  padding: 15px;
-  border: solid #0e0e0e0e 2px;
-  border-radius: 0px;
-}
-.files-status
-{
-  grid-column-start: 2;
-  background: #28a745;
-  color: white;
-  text-align: inherit;
-  padding: 15px;
-  border-radius: 0px;
-}
-.files-status li
-{
-  padding-top: 5px;
-
-}
-.picture-cycle_work{
-  height: 250px;
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-}
-.picture-work-cycle-one{
-  width: 100%;
-  height: 100%;
-  grid-column-start: 2;
-}
-.work-cycle-one{
-  height: 90%;
-  width: 100%;
-}
-.picture-branch{
-  padding-left: 0px;
-  width: 80px;
-}
-.branches_picture{
-  width: 150px;
-  height: 300px;
-}
+  .blocks-commands-info {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .information {
+    grid-column-start: 1;
+    padding: 15px;
+    border: solid #0e0e0e0e 2px;
+    border-radius: 0px;
+  }
+  .files-status {
+    grid-column-start: 2;
+    background: #28a745;
+    color: white;
+    text-align: inherit;
+    padding: 15px;
+    border-radius: 0px;
+  }
+  .files-status li {
+    padding-top: 5px;
+  }
+  .picture-cycle_work {
+    height: 250px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+  }
+  .picture-work-cycle-one {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+  }
+  .work-cycle-one {
+    height: 90%;
+    width: 100%;
+  }
+  .picture-branch {
+    padding-left: 0px;
+    width: 80px;
+  }
+  .branches_picture {
+    width: 150px;
+    height: 300px;
+  }
+} 

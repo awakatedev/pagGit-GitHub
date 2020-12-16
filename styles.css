@@ -1,125 +1,60 @@
-/*-------------------------------------------
----------------------HEADER------------------
----------------------------------------------*/
+/*--------------------------------------------
+---------------VARS AND ABSOLUTE--------------
+----------------------------------------------*/
 * {
-  font-family: "Mulish", sans-serif;
   margin: 0px;
 }
-
-header {  
-  background: rgb(21 25 31);
-  height: 600px;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 60% 40%;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-.title {
-  grid-column-start: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
-}
-.title-header h1{
-  color: #0278ae;
-}
-.title-header {
-  color: white;
-  font-size: 200%;
-  grid-column-start: 1;
-}
-.title-header p {
-  font-size: 75%;
-}
-.button-sing-in
-{
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-}
-.button-sing-in i{
-  margin-top: 15px;
-  font-size: 55%;
-  text-decoration: underline;
-}
-.registrer{
-  height: 60px;
-  width: 200px;
-  border-radius: 8px;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #28a745;
-  color: white;
-  font-size: 70%;
-}
-#sing-in-icon{
-margin-left: 10px;
-margin-bottom: 10px;
-font-size: 20px;
-text-decoration: none;
-}
-.registrer:hover{
-background-color: #28a770;
-}
-.picture__octocat {
-  padding-top: 80px;
-  max-width: 100%;
-  width: 450px;
-  height: 430px;
-  grid-column-start: 2;
+:root {
+  /*colors*/
+  --black: #000000;
+  --gray_dark: #0e0e0e0e;
+  --just_white: #ffffff;
+  --gray: #777777;
+  --blue_sky: #0278ae;
+  --green_slime: #28a745;
 }
 
 /*--------------------------------------------
 ---------------DIV BAR MENU-------------------
  ---------------------------------------------*/
-
-
 .list {
-  display: grid;
-  grid-template-columns: 5% 90% 5%;
-  grid-template-rows: 10% 60% 20% 10%;
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background: rgb(29 35 43);
   height: 70px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
 }
 
 /*----------left-----------*/
 .list_ubication {
-  grid-column-start: 2;
-  grid-row-start: 2;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-left: 4%;
 }
 .index {
   grid-column-start: 2;
 }
-.index i{
+.index i {
   margin-left: 5px;
   margin-top: 5px;
 }
 .index summary {
   padding: 10px;
-  color: white;
+  color: var(--just_white);
   list-style: none;
   font-size: 110%;
   font-weight: bold;
 }
-.index summary:hover{
+.index summary:hover {
   color: #46a2fd;
   transition: color 400ms;
 }
 .index ul {
-  background-color: white;
+  background-color: var(--just_white);
   display: none;
   list-style: none;
   padding: 0px;
@@ -134,141 +69,215 @@ ul:hover {
   display: block;
 }
 .index li {
-  background-color: white;
+  background-color: var(--just_white);
   margin: 15px 10px 5px 10px;
 }
 .index li a {
-  background-color: white;
-  color: #000000;
+  background-color: var(--just_white);
+  color: var(--black);
   text-decoration: none;
 }
 .index li a:hover {
   text-decoration: underline;
 }
-.picture-list{
-  grid-column-start: 1;
+.picture-list {
+  margin: 0px;
 }
 /*---------right----------*/
-.options{
-  grid-row-start: 2;
-  grid-column-start: 3;
-  display: grid;
-  grid-template-columns: 80% 20%;
+.options {
+  width: 15%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-right: 4%;
 }
 
-#ctn-icon-search{
-  grid-column-start: 1;
- /* left: 850px;
-   position: fixed;*/
-    height: 30px;
-    width: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0278ae;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+#ctn-icon-search {
+  height: 100%;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue_sky);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  z-index: 10;
+  right: 0;
 }
 
-#ctn-icon-search i{
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    transition: all 200ms;
+#icon-search {
+  height: 20px;
+  width: 100%;
+  padding-left: 4px;
+  font-size: 18px;
+  color: var(--just_white);
+  cursor: pointer;
+  transition: all 200ms;
 }
 
-#icon-search:hover{
-    color: gray;
+#icon-search:hover {
+  color: var(--gray);
 }
 
+.ctn-bars-search {
+  display: flex;
+  position: relative;
+  width: 70%;
+}
+#inputSearch {
+  height: 20px;
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  outline: 0;
+  border-radius: 5px;
+  border: solid white 1px;
+  transition: all 600ms;
+}
 
-#ctn-bars-search{
-grid-column-start: 1;
-    position: absolute;
-    height: 20px;
-/*    top: -4px;*/
-    width: 35%;
-    padding: 20px;
-    z-index: 9;
-    transition: all 600ms;
-   /* right: 0px;*/
+#box-search {
+  position: fixed;
+  top: 80px;
+  left: 75%;
+  transform: translateX(-50%);
+  width: 30%;
+  background: var(--just_white);
+  z-index: 8;
+  overflow: hidden;
   display: none;
- 
+  list-style: none;
 }
 
-#ctn-bars-search input{
-  display: none; 
-    height: 20px;
-    width: 35%;
-    margin: auto;
-    padding: 5px;
-    font-size: 15px;
-    outline: 0;
-    border-radius: 5px;
-    border: solid white 1px;
-    }
-
-#box-search{
-    position: fixed;
-    top: 80px;
-    left: 75%;
-    transform: translateX(-50%);
-    width: 30%;
-    background: #fff;
-    z-index: 8;
-    overflow: hidden;
-    display: none;
-    list-style: none;
+#box-search li a {
+  display: block;
+  width: 100%;
+  color: var(--gray);
+  padding: 12px 20px;
 }
 
-#box-search li a{
-    display: block;
-    width: 100%;
-    color: #777777;
-    padding: 12px 20px;
+#box-search li a:hover {
+  background: #fefefe;
 }
 
-#box-search li a:hover{
-    background: #f3f3f3;
+#box-search li a i {
+  margin-right: 10px;
+  color: var(--gray);
 }
 
-#box-search li a i{
-    margin-right: 10px;
-    color: #777777;
-    }
-
-#cover-ctn-search{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    z-index: 7;
-    display: none;
+#cover-ctn-search {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 7;
+  display: none;
 }
 
 /*----show menu styles--*/
-#icon-menu{
+#icon-menu {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  font-size: 20px;
+  color: var(--just_white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#menu_icon:hover {
+  color: var(--gray);
+}
+
+/*-------------------------------------------
+---------------------HEADER------------------
+---------------------------------------------*/
+
+.main-body {
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  background: rgb(21 25 31);
+  height: 600px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--just_white);
+}
+.title {
+  grid-column-start: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.title-header h1 {
+  font-family: "Nanum Gothic", sans-serif;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(48, 207, 208, 1) 11.2%,
+    rgba(51, 8, 103, 1) 92.5%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+.title-header {
+  color: var(--just_white);
+  font-size: 200%;
+  grid-column-start: 1;
+}
+.title-header p {
+  font-family: "Mulish", sans-serif;
+  font-size: 75%;
+}
+.button-sing-in {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.button-sing-in i {
+  margin-top: 15px;
+  font-size: 55%;
+  text-decoration: underline;
+}
+.registrer {
+  font-family: "Mulish", sans-serif;
+  height: 60px;
+  width: 200px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green_slime);
+  color: var(--just_white);
+  font-size: 70%;
+}
+#sing-in-icon {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.registrer:hover {
+  background-color: #28a770;
+}
+.picture__octocat {
+  padding-top: 80px;
+  max-width: 100%;
+  width: 450px;
+  height: 430px;
   grid-column-start: 2;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-  /*  right: 20px;*/
-/*    top: 10px;*/
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  /*  left: 1250px;
-    position: fixed;*/
 }
-
-#menu_icon:hover{
-    color: gray;
-}
-
 
 /*--------------------------------*/
 .reference a {
@@ -277,12 +286,11 @@ grid-column-start: 1;
   font-size: 110%;
   padding: 10px;
 }
-.reference a:hover{
+.reference a:hover {
   color: #46a2fd;
   transition: color 400ms;
 }
 /*---------------------------------*/
-
 
 /*-----------------------------------------------
 ---------------section what is git---------------*/
@@ -333,35 +341,43 @@ grid-column-start: 1;
 .button-git {
   height: 40px;
   width: 250px;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 40.7%, rgba(243,193,124,1) 79.7% );
-   -webkit-background-clip: text;
-     color: transparent;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(62, 133, 238, 1) 1.1%,
+    rgba(227, 137, 240, 1) 40.7%,
+    rgba(243, 193, 124, 1) 79.7%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   font-size: 130%;
-  font-family: oswald;
   font-weight: bold;
 }
-.button-git i{
+.button-git i {
   margin-left: 10px;
 }
 .button-github {
   height: 40px;
   width: 250px;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 40.7%, rgba(243,193,124,1) 79.7% );
-   -webkit-background-clip: text;
-     color: transparent;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(62, 133, 238, 1) 1.1%,
+    rgba(227, 137, 240, 1) 40.7%,
+    rgba(243, 193, 124, 1) 79.7%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   font-size: 130%;
-  font-family: oswald;
   font-weight: bold;
 }
-.button-github i{
+.button-github i {
   margin-left: 10px;
 }
 
@@ -466,11 +482,11 @@ ul:hover {
 /*-----------------------------------------------
 ------------SECTION WHAT IS GITHUB----------------
 -------------------------------------------------*/
-.main-github {
+.section-github {
   margin-top: 100px;
   height: 400px;
   width: 100vw;
-  background: rgb(21 25 31);;
+  background: rgb(21 25 31);
   display: grid;
   grid-template-rows: 30% 40% 30%;
   grid-template-columns: 10% 80% 10%;
@@ -505,14 +521,18 @@ ul:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-diriection: column;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
+.text-what-is_github summary:hover {
+  color: gray;
+}
 .text-what-is_github a {
   margin-top: 5px;
   font-size: 15px;
+  text-decoration: underline;
 }
 .text-what-is_github ul {
   background-color: white;
@@ -587,35 +607,36 @@ ul:hover {
   color: #0e0e0e;
   padding-top: 10px;
 }
-.git-configure{
+.git-configure {
   margin-top: 20px;
 }
-.git-configure summary{
-padding: 5px;
-color: #0278ae;
-font-size: 16px;
-border: solid #0278ae 2px;
-border-radius: 10px;
-height: 50px;
-width: 200px;
-display: flex;
-justify-content: center;
-align-items: center;
+.git-configure summary {
+  padding: 5px;
+  color: #0278ae;
+  font-size: 16px;
+  border: solid #0278ae 2px;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.git-configure ul{
-background-color: white;
-display: none;
-position: absolute;
-width: 300px;
-border-radius: 10px;
-opacity: 90%;
-border: solid #0e0e0e0e 2px;
-padding: 0px;
+.git-configure ul {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width: 300px;
+  border-radius: 10px;
+  opacity: 90%;
+  border: solid #0e0e0e0e 2px;
+  padding: 0px;
 }
-.git-configure:hover ul, ul:hover{
-display: block;
+.git-configure:hover ul,
+ul:hover {
+  display: block;
 }
-.git-configure p{
+.git-configure p {
   background-color: white;
   padding: 10px;
 }
@@ -635,14 +656,14 @@ display: block;
 .information h3 {
   margin: 10px 10px;
 }
-.start-git git_command{
+.start-git git_command {
   display: flex;
   justify-content: center;
 }
 .git_command {
   background: #0e0e0e;
   color: white;
-  width 60%;
+  width: 60%;
   height: 25px;
   display: flex;
   align-items: center;
@@ -658,17 +679,16 @@ display: block;
   text-align: inherit;
   padding: 15px;
   border-radius: 10px;
-  
 }
 .files-status li {
-  padding-top: 5px;
+  padding: 10px;
 }
-.picture-cycle_work{
+.picture-cycle_work {
   display: grid;
   grid-template-columns: 15% 70% 15%;
   margin-top: 20px;
 }
-.picture-work-cycle-one{
+.picture-work-cycle-one {
   grid-column-start: 2;
   display: flex;
   justify-content: center;
@@ -676,16 +696,16 @@ display: block;
   height: 100%;
   width: 100%;
 }
-.work-cycle-one{
+.work-cycle-one {
   height: 80%;
   width: 70%;
 }
-.picture-branch{
+.picture-branch {
   height: 350px;
   width: 200px;
   padding-left: 80px;
 }
-.branches_picture{
-height: 350px;
-width: 200px;
+.branches_picture {
+  height: 350px;
+  width: 200px;
 }
