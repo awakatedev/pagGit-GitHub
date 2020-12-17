@@ -1,5 +1,5 @@
 /*--------------------------------------------
----------------VARS AND ABSOLUTE--------------
+---------------VARS and absolute--------------
 ----------------------------------------------*/
 * {
   margin: 0px;
@@ -8,10 +8,13 @@
   /*colors*/
   --black: #000000;
   --gray_dark: #0e0e0e0e;
+  --recomendation_gray: #0e0e0e;
   --just_white: #ffffff;
   --gray: #777777;
   --blue_sky: #0278ae;
+  --swet_blue: #46a2fd;
   --green_slime: #28a745;
+  --hover_green: #28a770;
 }
 
 /*--------------------------------------------
@@ -269,7 +272,7 @@ a {
   text-decoration: none;
 }
 .registrer:hover {
-  background-color: #28a770;
+  background-color: var(--hover_green);
 }
 .picture__octocat {
   padding-top: 80px;
@@ -282,12 +285,12 @@ a {
 /*--------------------------------*/
 .reference a {
   text-decoration: none;
-  color: white;
+  color: var(--just_white);
   font-size: 110%;
   padding: 10px;
 }
 .reference a:hover {
-  color: #46a2fd;
+  color: var(--swet_blue);
   transition: color 400ms;
 }
 /*---------------------------------*/
@@ -297,7 +300,7 @@ a {
 /*----recomendations git and github blocks-------*/
 .block-recomendation {
   margin-top: 100px;
-  color: white;
+  color: var(--just_white);
   border-radius: 5px;
   display: grid;
   grid-template-columns: 10% 80% 10%;
@@ -308,18 +311,18 @@ a {
   display: flex;
   justify-content: flex-start;
   margin-left: 30px;
-  color: #0e0e0e;
+  color: var(--recomendation_gray);
   font-size: 90%;
 }
 .recomendation h3 {
   margin-top: 10px;
   margin-left: 20px;
-  color: grey;
+  color: var(--gray);
 }
 .recomendation-git-github {
   padding: 40px;
   padding-bottom: 40px;
-  background: #0e0e0e;
+  background: var(--recomendation_gray);
   grid-column-start: 2;
   margin-top: 100px;
   border-radius: 10px;
@@ -433,7 +436,7 @@ a {
 .install-git summary {
   margin: 10px 10px 0px 10px;
   padding: 5px;
-  color: #0278ae;
+  color: var(--blue_sky);
   list-style: none;
   border-radius: 10px;
   font-size: 16px;
@@ -446,7 +449,7 @@ a {
   text-align: center;
 }
 .install-git ul {
-  background-color: white;
+  background-color: var(--just_white);
   display: none;
   list-style: none;
   padding: 0px;
@@ -465,12 +468,12 @@ ul:hover {
 }
 
 .install-git li {
-  background-color: white;
+  background-color: var(--just_white);
   margin: 15px 10px 5px 10px;
-  color: #000000;
+  color: var(--black);
 }
 .install-git a {
-  color: #000000;
+  color: var(--black);
   text-decoration: underline;
 }
 .cat_list {
@@ -513,21 +516,21 @@ ul:hover {
   margin: 10px;
 }
 .text-what-is_github summary {
-  background: #0278ae;
-  color: white;
+  background: var(--blue_sky);
+  color: var(--just_white);
   height: 100px;
   width: 200px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-diriection: column;
+  flex-direction: column;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
 .text-what-is_github summary:hover {
-  color: gray;
+  color: var(--gray);
 }
 .text-what-is_github a {
   margin-top: 5px;
@@ -535,7 +538,7 @@ ul:hover {
   text-decoration: underline;
 }
 .text-what-is_github ul {
-  background-color: white;
+  background-color: var(--just_white);
   display: none;
   list-style: none;
   padding: 0px;
@@ -604,7 +607,7 @@ ul:hover {
   height: 300px;
 }
 .repo p {
-  color: #0e0e0e;
+  color: var(--recomendation_gray);
   padding-top: 10px;
 }
 .git-configure {
@@ -612,7 +615,7 @@ ul:hover {
 }
 .git-configure summary {
   padding: 5px;
-  color: #0278ae;
+  color: var(--blue_sky);
   font-size: 16px;
   border: solid #0278ae 2px;
   border-radius: 10px;
@@ -623,7 +626,7 @@ ul:hover {
   align-items: center;
 }
 .git-configure ul {
-  background-color: white;
+  background-color: var(--just_white);
   display: none;
   position: absolute;
   width: 300px;
@@ -637,7 +640,7 @@ ul:hover {
   display: block;
 }
 .git-configure p {
-  background-color: white;
+  background-color: var(--just_white);
   padding: 10px;
 }
 /*---------------------start git---------------------------*/
@@ -661,8 +664,8 @@ ul:hover {
   justify-content: center;
 }
 .git_command {
-  background: #0e0e0e;
-  color: white;
+  background: var(--recomendation_gray);
+  color: var(--just_white);
   width: 60%;
   height: 25px;
   display: flex;
@@ -674,8 +677,8 @@ ul:hover {
 }
 .files-status {
   grid-column-start: 4;
-  background: #28a745;
-  color: white;
+  background: var(--green_slime);
+  color: var(--just_white);
   text-align: inherit;
   padding: 15px;
   border-radius: 10px;
@@ -701,11 +704,12 @@ ul:hover {
   width: 70%;
 }
 .picture-branch {
-  height: 350px;
-  width: 200px;
-  padding-left: 80px;
+  height: 380px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .branches_picture {
-  height: 350px;
-  width: 200px;
+  height: 380px;
+  width: 60%;
 }

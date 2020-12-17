@@ -3,7 +3,6 @@
 -------------------------------------------*/
 
 @media only screen and (max-width: 700px) {
-
   body {
     min-width: 100%;
   }
@@ -19,19 +18,18 @@
     align-items: center;
     text-align: center;
   }
+  /*-------------list---------------*/
   .list {
-    display: grid;
-    grid-template-columns: 5% 75% 15% 5%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   .options {
-    grid-column-start: 3;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   .list_ubication {
-    grid-column-start: 2;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -53,7 +51,7 @@
   #inputSearch {
     display: none;
   }
-
+  /*------------------------------------*/
   .title {
     display: flex;
     justify-content: center;
@@ -64,6 +62,7 @@
   .picture__octocat {
     display: none;
   }
+  /*--------------------------------*/
   .recomendation {
     display: flex;
     display: inline;
@@ -75,6 +74,7 @@
     display: inline;
     margin-top: 10px;
   }
+  /*----------------------------------*/
   .what-is-git {
     display: grid;
     grid-template-columns: 10% 80% 10%;
@@ -206,11 +206,9 @@
     width: 100%;
   }
   .picture-branch {
-    padding-left: 0px;
-    width: 80px;
   }
   .branches_picture {
-    width: 150px;
-    height: 300px;
+    width: 100%;
   }
-} 
+}
+

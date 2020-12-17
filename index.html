@@ -17,7 +17,7 @@
 </head>
 <body> 
 
-  <!--#######DIV BAR MENU#######-->
+ <!--#######DIV BAR MENU#######-->
  <section class="list">
 
             <!--right-->
@@ -83,7 +83,7 @@
        <div id="cover-ctn-search"></div>
 </section>
 
-   <!--menu-->
+   <!--menu-block-->
     
 
 <header>
@@ -97,7 +97,7 @@
         </div>            
       </div>
     </div>
-      <img src="./pictures/jetpacktocat.png" alt="octocat" class="picture__octocat">
+      <img src="./pictures/globe-700.jpg" alt="octocat" class="picture__octocat">
 </header>
 
 <!--MAIN BODY-->
@@ -338,10 +338,14 @@
 
   <section class="blocks-commands-info">
     <div class="information">
-      <h2>Branches and Merge:</h2>
+      <h2>Branches, Merge, and how show commits and compare changes:</h2>
       <p><b class="git_command" id="commit-branch">$ git branch branch-name</b>When you start a repository, By defalul you are located in the master branch. This command creates a new branch where you will have a copy of your project and there you can make changes, correct bugs and do experiments, it does not affect your main branch. and if you want to add your changes to the main branch you can do a git merge.
       <b class="git_command" id="command-checkout">$ git checkout branch-name</b>This command is to jump between branches, when you are located in a branch you can see only its state and not that of other branches, to see the changes of another branch and be able to modify it we use the git checkout.
-      <b class="git_command" id="command-merge">$ git merge branch-name</b>Whit this command you will can add the changes in a branch in another branch and this make a fussion whit the content to the 2 branches for example add the changes in your master branch.  
+      <b class="git_command" id="command.checkout-id">$ git checkout commit-ID</b>This command let us return in the time. we coan return to wharevwe last vertion of our project, this command is to a form to make news branches and jump betwen thre.
+      <b class="git_command" id="command-merge">$ git merge branch-name</b>Whit this command you will can add the changes in a branch in another branch and this make a fussion whit the content to the 2 branches for example add the changes in your master branch. 
+      <b class="git_command" id="command-show">$ git show</b>The git show command shows us the changes that have existed on a file and is very useful to detect when certain changes occurred, what was broken and how we can solve it. But we can be more detailed.
+      <b class="git_command" id="command-diff">$ git diff commit A commit B</b>If we want to see the difference between one version and another, not necessarily all the changes since the creation of the file, we can use the git diff command.
+      <b class="git_command" id="command-log">$ git log</b>If we want watch all your commits we could use the git log command and you can get the ID of your commits with this command.
       </p>
     </div>
 
