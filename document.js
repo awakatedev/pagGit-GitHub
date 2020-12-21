@@ -1,8 +1,12 @@
 //-------------MENU-------------
 
 document.getElementById("icon-menu").addEventListener("click", show_menu);
+//vars
+menu_block = document.getElementById("show-menu");
 
 function show_menu() {
+  menu_block.style.display = "block";
+
   document
     .getElementById("move-content")
     .classList.toggle("move-container-all");
@@ -22,9 +26,10 @@ cover_ctn_search = document.getElementById("cover-ctn-search");
 inputSearch = document.getElementById("inputSearch");
 box_search = document.getElementById("box-search");
 icon_search = document.getElementById("icon-search");
+x = window.matchMedia("(max-width: 650px)");
 
 //-----Function show browser-------
-function show_browser() {
+function show_browser(x) {
   inputSearch.style.display = "block";
   cover_ctn_search.style.display = "block";
   inputSearch.focus();

@@ -20,18 +20,18 @@
 }
 
 /*--------------------------------------------
----------------DIV BAR MENU-------------------
+---------------FIRST-BLOCK-------------------
  ---------------------------------------------*/
 .first-block {
   font-family: "Nanum Gothic", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: rgb(29 35 43);*/
   background-color: var(--purple-background);
   height: 70px;
   width: 100vw;
   position: fixed;
+  z-index: 10;
 }
 
 /*----------left-----------*/
@@ -41,13 +41,21 @@
   justify-content: flex-start;
   margin-left: 4%;
 }
-.index {
-  grid-column-start: 2;
-}
 .index i {
   margin-left: 5px;
   margin-top: 5px;
 }
+.reference a {
+  text-decoration: none;
+  color: var(--just_white);
+  font-size: 110%;
+  padding: 10px;
+}
+.reference a:hover {
+  color: var(--swet_blue);
+  transition: color 200ms;
+}
+/*---------------------------------*/
 .index summary {
   padding: 10px;
   color: var(--just_white);
@@ -57,7 +65,7 @@
 }
 .index summary:hover {
   color: var(--swet_blue);
-  transition: color 400ms;
+  transition: color 200ms;
 }
 .index ul {
   background-color: var(--just_white);
@@ -65,10 +73,9 @@
   list-style: none;
   padding: 0px;
   position: absolute;
-  width: 200px;
+  width: 300px;
   margin: 0px 0px 0px 5px;
   border-radius: 10px;
-  opacity: 90%;
 }
 .index:hover ul,
 ul:hover {
@@ -76,7 +83,7 @@ ul:hover {
 }
 .index li {
   background-color: var(--just_white);
-  margin: 15px 10px 5px 10px;
+  margin: 20px 15px 5px 15px;
 }
 .index li a {
   background-color: var(--just_white);
@@ -163,7 +170,7 @@ ul:hover {
 }
 
 #box-search li a:hover {
-  background: #fefe;
+  background: var(--gray_soft);
 }
 
 #box-search li a i {
@@ -172,10 +179,11 @@ ul:hover {
 }
 
 #cover-ctn-search {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  left: 0;
+  margin: 0;
+  padding: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 7;
   display: none;
@@ -198,6 +206,32 @@ ul:hover {
   color: var(--gray);
 }
 
+.menu nav ul {
+  list-style: none;
+}
+
+.menu nav ul li {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.menu nav ul li a {
+  color: var(--gray);
+  font-size: 18px;
+  transition: color 300ms;
+}
+.menu {
+  top: 70px;
+  right: 0px;
+  display: none;
+  height: 630px;
+  width: 40%;
+  position: fixed;
+  background: var(--just_white);
+  opacity: 90%;
+}
+
 /*-------------------------------------------
 ---------------------HEADER------------------
 ---------------------------------------------*/
@@ -207,9 +241,7 @@ ul:hover {
 }
 
 header {
-  /* background: rgb(21 25 31);*/
-  background-color: var(--purple-background);
-
+  background-color: #0a0825;
   height: 600px;
   width: 100vw;
   display: grid;
@@ -225,7 +257,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 7%;
 }
 .title-header h1 {
   font-family: "Nanum Gothic", sans-serif;
@@ -233,7 +265,7 @@ a {
   font-weight: bold;
 }
 .title-header {
-  color: #fefe;
+  color: var(--gray_soft);
   font-size: 200%;
   grid-column-start: 1;
 }
@@ -248,6 +280,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  outline: 0;
 }
 .button-sing-in i {
   margin-top: 15px;
@@ -277,25 +310,12 @@ a {
   background-color: var(--hover_green);
 }
 .picture__octocat {
-  padding-top: 80px;
+  margin-top: 248px;
   max-width: 100%;
   width: 450px;
   height: 430px;
   grid-column-start: 2;
 }
-
-/*--------------------------------*/
-.reference a {
-  text-decoration: none;
-  color: var(--just_white);
-  font-size: 110%;
-  padding: 10px;
-}
-.reference a:hover {
-  color: var(--swet_blue);
-  transition: color 400ms;
-}
-/*---------------------------------*/
 
 /*-----------------------------------------------
 ---------------section what is git---------------*/
@@ -404,15 +424,15 @@ a {
 }
 .what_is_git {
   grid-column-start: 2;
-  border: solid var(--gray_dark) 2px;
   border-radius: 10px;
   padding: 30px 30px;
+  box-shadow: 8px 8px 8px 8px rgba(89, 73, 30, 0.15);
 }
 .what_is_git2 {
   grid-column-start: 4;
-  border: solid var(--gray_dark) 2px;
   border-radius: 10px;
   padding: 30px 30px;
+  box-shadow: 8px 8px 8px 8px rgba(89, 73, 30, 0.15);
 }
 .what_is_git p,
 .what_is_git2 p {
@@ -498,63 +518,88 @@ ul:hover {
 ------------SECTION WHAT IS GITHUB----------------
 -------------------------------------------------*/
 .section-github {
-  margin-top: 100px;
-  height: 400px;
+  margin-top: 50px;
+  height: 500px;
   width: 100vw;
-  background: var(--purple-background);
-  display: grid;
-  grid-template-rows: 30% 40% 30%;
-  grid-template-columns: 10% 80% 10%;
-}
-.picture__space {
+  /* background: var(--purple-background);*/
   display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
-  grid-column-start: 2;
-  grid-row-start: 0;
-}
-.picture-space {
-  width: 130%;
-  height: 130%;
+  justify-content: center;
+  /*overflow: scroll;*/
+  /* position: relative;*/
 }
 .what_is-github {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-column-start: 2;
-  grid-row-start: 2;
+  height: 250px;
+  white-space: nowrap;
+  margin: 70px 0px 0px 0px;
+  padding-bottom: 10px;
 }
-.text-what-is_github {
+.carousel-item {
+  z-index: 2;
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  transition: 400ms all;
+  transform-origin: center left;
+  position: relative;
   margin: 10px;
 }
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(80px, 0, 0);
+}
+.what_is-github:hover .carousel-item {
+  opacity: 0.3;
+}
+.what_is-github:hover .carousel-item:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
+.carousel-item_img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+.text-what-is_github {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 1;
+  transition: 400ms opacity;
+  position: absolute;
+  top: 215px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
 .text-what-is_github summary {
-  background: var(--blue_sky);
-  color: var(--just_white);
-  height: 100px;
-  width: 200px;
-  border-radius: 10px;
+  background: var(--gray_soft);
+  color: var(--black);
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
   text-align: center;
+  padding: 10px 5px 35px 0px;
+  width: 100%;
 }
 .text-what-is_github summary:hover {
   color: gray;
 }
 .text-what-is_github a {
   margin-top: 5px;
-  font-size: 15px;
-  text-decoration: underline;
+  font-size: 12px;
+  color: var(--black);
 }
 .text-what-is_github ul {
   background-color: var(--just_white);
   display: none;
   list-style: none;
   padding: 0px;
-  position: absolute;
   width: 60%;
   margin: 5px 0px 0px 5px;
   border-radius: 10px;
@@ -611,7 +656,8 @@ ul:hover {
   justify-content: center;
   flex-direction: column;
   padding: 20px 20px;
-  border: solid var(--gray_dark) 2px;
+  /*border: solid var(--gray_dark) 2px;*/
+  box-shadow: 8px 8px 8px 8px rgba(89, 73, 30, 0.15);
   border-radius: 10px;
   text-align: center;
   margin-right: 20px;

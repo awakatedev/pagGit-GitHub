@@ -7,39 +7,20 @@
     min-width: 100%;
   }
 
-  header {
-    grid: none;
-    display: flex;
-    justify-content: center;
-    height: 700px;
-  }
-  .button-sing-in {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  /*-------------list---------------*/
-  .list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  /*-------------FIRST-BLOCK---------------*/
+
   .options {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .list_ubication {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    width: 7%;
   }
   .index {
-    grid-column-start: 2;
-    font-size: 85%;
+    font-size: 80%;
   }
-  .reference {
-    font-size: 85%;
+  .index summary {
+    padding: 5px;
+  }
+  .reference a {
+    font-size: 80%;
+    padding: 5px;
   }
   #ctn-icon-search {
     background-color: transparent;
@@ -62,18 +43,29 @@
     left: 50%;
     width: 100%;
   }
-  /*------------------------------------*/
+  /*------------HEADER-------------*/
+
+  header {
+    grid: none;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+  }
+  .button-sing-in {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
   .title {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 8px;
   }
-
   .picture__octocat {
     display: none;
   }
-  /*--------------------------------*/
+  /*---------------RECOMENDATION---------------------*/
   .recomendation {
     display: flex;
     display: inline;
@@ -85,7 +77,7 @@
     display: inline;
     margin-top: 10px;
   }
-  /*----------------------------------*/
+  /*-----------------WHAT IS GIT-----------------*/
   .what-is-git {
     display: grid;
     grid-template-columns: 10% 80% 10%;
@@ -97,7 +89,7 @@
     margin-top: 50px;
   }
 
-  /*---list install git---*/
+  /*--------LIST INSTALL GIT--------*/
   .list__install-git {
     display: flex;
     justify-content: space-around;
@@ -119,7 +111,7 @@
   /*---------------------------------------------------
 ----------------SECTION WHAT IS GITHUB-----------------
 ------------------------------------------------------*/
-  .what_is-github {
+ /* .what_is-github {
     grid: none;
   }
   .text-what_is_github2 {
@@ -131,7 +123,7 @@
   .what_is-github {
     display: flex;
     flex-direction: column;
-  }
+  }*/
 
   /*---------------SETION REPOSITORY---------------------*/
   .repository {
@@ -188,13 +180,11 @@
   .information {
     grid-column-start: 1;
     padding: 15px;
-    border: solid #0e0e0e0e 2px;
+    border: solid var(--gray_dark) 2px;
     border-radius: 0px;
   }
   .files-status {
     grid-column-start: 2;
-    background: #28a745;
-    color: white;
     text-align: inherit;
     padding: 15px;
     border-radius: 0px;
@@ -216,9 +206,8 @@
     height: 90%;
     width: 100%;
   }
-  .picture-branch {
-  }
   .branches_picture {
     width: 100%;
   }
-}
+
+  
