@@ -7,16 +7,17 @@ menu_block = document.getElementById("show-menu");
 function show_menu() {
   menu_block.style.display = "block";
 
-  document
-    .getElementById("move-content")
-    .classList.toggle("move-container-all");
-  document.getElementById("show-menu").classList.toggle("show-lateral");
+  // document
+  //    .getElementById("move-content")
+  //    .classList.toggle("move-container-all");
+  // document.getElementById("show-menu").classList.toggle("show-lateral");
 }
 
 //-----------BROWSER---------------
 
 //Executing functions
 document.getElementById("icon-search").addEventListener("click", show_browser);
+document.getElementById("inputSearch").addEventListener("click", show_browser);
 document
   .getElementById("cover-ctn-search")
   .addEventListener("click", ocultar_buscador);
@@ -26,27 +27,33 @@ cover_ctn_search = document.getElementById("cover-ctn-search");
 inputSearch = document.getElementById("inputSearch");
 box_search = document.getElementById("box-search");
 icon_search = document.getElementById("icon-search");
-x = window.matchMedia("(max-width: 650px)");
+x = window.matchMedia("(max-width: 650px)".matches);
 
 //-----Function show browser-------
 function show_browser(x) {
-  inputSearch.style.display = "block";
-  cover_ctn_search.style.display = "block";
-  inputSearch.focus();
-
   if (inputSearch.value === "") {
     box_search.style.display = "none";
+  }
+  if (x) {
+    inputSearch.style.display = "block";
+    cover_ctn_search.style.display = "block";
+  } else {
+    inputSearch.style.dispaly = "block";
+    cover_ctn_search.style.display = "none";
   }
 }
 
 //----Funcion para ocultar el buscador-----
-function ocultar_buscador() {
-  inputSearch.style.display = "none";
-  cover_ctn_search.style.display = "none";
-  inputSearch.value = "";
-  box_search.style.display = "none";
+function ocultar_buscador(x) {
+  // inputSearch.style.display = "block";
+  // cover_ctn_search.style.display = "none";
+  //  box_search.style.display = "none";
+  if (x) {
+    inputSearch.style.display = "none";
+    cover_ctn_search.style.display = "none";
+    box_search.style.display = "none";
+  }
 }
-
 //executing function filtrer options
 document
   .getElementById("inputSearch")
@@ -73,3 +80,5 @@ function internal_browser() {
     }
   }
 }
+
+// CAROUSEL SCROLL

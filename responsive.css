@@ -31,17 +31,23 @@
   }
   #inputSearch {
     top: 70px;
-    left: 40px;
-    right: 30px;
+    left: 8%;
+    right: 0%;
     display: none;
-    width: 80%;
+    width: 50%;
     position: fixed;
-    border-radius: none;
+    border-radius: 0px;
+    z-index: 10;
   }
   #box-search {
     top: 110px;
     left: 50%;
     width: 100%;
+  }
+  .menu{
+   height: 900px;
+   width: 60%;
+   position: absolute;
   }
   /*------------HEADER-------------*/
 
@@ -49,7 +55,7 @@
     grid: none;
     display: flex;
     justify-content: center;
-    height: 700px;
+    height: 900px;
   }
   .button-sing-in {
     display: flex;
@@ -60,10 +66,17 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 8px;
+    right: 2%;
+    left: 2%;
   }
   .picture__octocat {
-    display: none;
+    top: 663px;
+    height: 290px;
+    width: 300px;
+  }
+  .ligths_background_header{
+    width: 100vw;
+    height: 600px;
   }
   /*---------------RECOMENDATION---------------------*/
   .recomendation {
