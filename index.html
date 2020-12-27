@@ -25,7 +25,7 @@
 
             <img class="picture-list" src="./pictures/icons8-github-48.png" alt="logo">
         <div class="index">
-            <summary>Index<i class="fas fa-angle-button"></i></summary>
+            <summary>Index<i class="fas fa-angle-down"></i></summary>
             <ul>
                 <li><a href="#what-is-git"><b>What is Git?</b></a></li>
                 <hr>
@@ -250,8 +250,14 @@
   <!--CAROUSEL WHAT IS GITHUB-->
   <section class="section-github" id="section-github">
 
-    <div class="what_is-github" id="what_is-github-scroll">
-      <div class="carousel-item">
+    <div class="what_is-github">
+
+      <div class="carousel__actions">
+        <button id="carousel__button--prev" aria-label="Previous slide">
+        <i class="fas fa-angle-left"></i>
+        </button>
+      </div>
+      <div class="carousel__item carousel__item--visible">
         <img class="carousel-item_img" src="./pictures/pexels-photo-3183197.jpeg" alt="background-image">
           <div class="text-what-is_github">
             <summary><b>What is GitHub?</b><a>Read more</a></summary>
@@ -262,7 +268,7 @@
           </div>
           </div>
 
-        <div class="carousel-item">
+        <div class="carousel__item" >
           <img class="carousel-item_img" src="./pictures/pexels-photo-3861964.jpeg" alt="background-image">
              <div class="text-what-is_github">
                <summary><b>Why use GitHub?</b><a>Read more</a> </summary>
@@ -272,7 +278,7 @@
              </div>
          </div>
 
-        <div class="carousel-item">
+         <div class="carousel__item">
           <img src="./pictures/pexels-photo-2653362.jpeg" alt="background-image">
             <div class="text-what-is_github">
               <summary><b>GitHub isn't just</br> for Developers</b><a>Read more</a></summary>
@@ -281,7 +287,15 @@
                 </ul>
             </div>
          </div>
-     </div>
+        
+         <!--BOTTONS SCROLL-->
+         
+        <div class="carousel__actions">
+           <button id="carousel__button--next" aria-label="Next slide">
+             <i class="fas fa-angle-right"></i>
+           </button>
+        </div> 
+       </div> 
   </section>
 
              <!--SECTION HOW USE GIT-->
