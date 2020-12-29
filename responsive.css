@@ -31,10 +31,10 @@
   }
   #inputSearch {
     top: 70px;
-    left: 8%;
-    right: 0%;
+    left: 10%;
+    right: 10%;
     display: none;
-    width: 50%;
+    width: 70%;
     position: fixed;
     border-radius: 0px;
     z-index: 10;
@@ -69,6 +69,12 @@
     right: 2%;
     left: 2%;
   }
+  .title-header h1{
+    line-height: 60px;
+  }
+  .title-header p{
+    margin-top: 20px;
+  }
   .picture__octocat {
     top: 663px;
     height: 290px;
@@ -80,15 +86,14 @@
   }
   /*---------------RECOMENDATION---------------------*/
   .recomendation {
-    display: flex;
     display: inline;
-    justify-content: center;
     text-align: center;
     margin: 0px;
   }
   .recomendation h3 {
-    display: inline;
+    line-height: 30px;
     margin-top: 10px;
+    display: inline;
   }
   /*-----------------WHAT IS GIT-----------------*/
   .what-is-git {
@@ -146,7 +151,6 @@
  .carousel__actions {
   display: inline-block;
   position: relative;
-  bottom: 50%;
   transform: translateY(-50%);
 }
 .carousel__actions button {

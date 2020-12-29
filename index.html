@@ -55,10 +55,9 @@
                     <!--MENU-->
                <div id="icon-menu">
                   <i class="fas fa-bars" id="menu_icon"></i>
+                  <i class="fas fa-times" id="close-menu_icon"></i>
                </div>
-               <div id="icon-x">
-
-               </div>
+               
                     <!--BROWSER-->
                <div class="ctn-bars-search">
                   <div id="ctn-icon-search">
@@ -97,7 +96,8 @@
            </ul>
         </nav>
     </div>
-    
+    <div id="cover-ctn-menu"></div>
+
 <div class="ligths-background-header">
   <img src="./pictures/hero-glow.svg" alt="ligths-background" class="ligths_background_header">
 </div>
@@ -340,14 +340,16 @@
          <p><b class="git_command" id="command-status">$ git status</b> Allows us to see the status of all our files and folders.</p>
          <p><b class="git_command" id="command-add">$ git add file-folder-mane</b> Helps us move files from untraked or unstaged to staged state. We can use git file-or-folder-name to add individual files and or folders or git add -A to move all files
                                             in our project (both Untrackeds and Unstageds).</p>
-         <p><b class="git_command" id="command-reset">$ git reset HEAD</b> Helps us take files out of the staged state to return them to teyr previous state. If the file came from unstaged, the go back there. and the same was comming from untracked. </p>
+         <p><b class="git_command" id="command-reset">$ git reset HEAD</b> Helps us take files out of the staged state to return them to their previous state. If the file came from unstaged, the go back there. and the same was comming from untracked. </p>
+         <p><b class="git_command">$ git reset --hard</b> This command allows us to delete all the information we have in the staging area (this removes everything to form permanently).</p>
+         <p><b class="git_command">$ git reset --soft</b> This command is friendlier. because it does not absolutely remove the information from the hard disk, only from the staging area and lets us add our changes but from a previous commit.</p>
          <p><b class="git_command" id="command-commit">$ git commit -m "change name"</b> Helps us move files from Unstaged to traked. this is a special occation, the files have been saved or updated in the repository. 
                                             Git will ask us to leave a menssage to remember the changes we made and we can use the -m argument to write it.</p>
          <p><b class="git_command" id="command-rm">$ git rm</b> This command deeds one of the following arguments to be successful:
                                             <ul>
                                               <li><b class="git_command">$ git rm --cached</b> Move the files that we indicate to the Untraked state.</li>
                                               <li><b class="git_command">$ git rm --force</b> Delete the files from Git and from te hard disk. Git keeps the record of the existence of the files, so we can recover them if necessary (but we must use more advanced commands).</li>
-                                            </ul></p>
+                                            </ul></p>                                 
        </div>
     </div>
 
