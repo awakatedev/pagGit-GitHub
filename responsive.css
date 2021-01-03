@@ -47,7 +47,7 @@
   .menu{
    height: 900px;
    width: 60%;
-   position: absolute;
+   position: sticky;
   }
   /*------------HEADER-------------*/
 

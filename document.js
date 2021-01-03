@@ -1,3 +1,10 @@
+// GLOBAL
+cover_ctn_search = document.getElementById("cover-ctn-search");
+inputSearch = document.getElementById("inputSearch");
+box_search = document.getElementById("box-search");
+icon_search = document.getElementById("icon-search");
+x = window.matchMedia('(max-width: 650px)'.matches);
+
 //-------------MENU-------------
 
 document.getElementById("menu_icon").addEventListener("click", show_menu);
@@ -42,20 +49,10 @@ document.getElementById("icon-search").addEventListener("click", show_browser);
 document.getElementById("inputSearch").addEventListener("click", show_browser);
 document
   .getElementById("cover-ctn-search")
-  .addEventListener("click", ocultar_buscador);
-
-//vars
-cover_ctn_search = document.getElementById("cover-ctn-search");
-inputSearch = document.getElementById("inputSearch");
-box_search = document.getElementById("box-search");
-icon_search = document.getElementById("icon-search");
-x = window.matchMedia("(max-width: 650px)".matches);
+  .addEventListener("click", close_browser);
 
 //-----Function show browser-------
 function show_browser(x) {
-  if (inputSearch.value === "") {
-    box_search.style.display = "none";
-  }
   if (x) {
     inputSearch.style.display = "block";
     cover_ctn_search.style.display = "block";
@@ -67,10 +64,7 @@ function show_browser(x) {
 }
 
 //----Funcion para ocultar el buscador-----
-function ocultar_buscador(x) {
-  // inputSearch.style.display = "block";
-  // cover_ctn_search.style.display = "none";
-  //  box_search.style.display = "none";
+function close_browser() {
   if (x) {
     inputSearch.style.display = "none";
     cover_ctn_search.style.display = "none";
