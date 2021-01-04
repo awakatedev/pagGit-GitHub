@@ -73,6 +73,7 @@
   list-style: none;
   padding: 0px;
   position: absolute;
+  left: 5%;
   width: 300px;
   margin: 0px 0px 0px 5px;
   border-radius: 10px;
@@ -204,12 +205,12 @@ ul:hover {
 }
 #menu_icon {
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: calc(20%);
   display: block;
 }
 #close-menu_icon {
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: calc(20%);
   display: none;
 }
 
@@ -526,10 +527,10 @@ a {
   list-style: none;
   padding: 0px;
   position: absolute;
-  width: 60%;
-  margin: 5px 0px 0px 5px;
+  width: 70%;
+  right: 20%;
   border-radius: 10px;
-  opacity: 90%;
+  z-index: 1;
 }
 .install-git:hover ul,
 ul:hover {
@@ -642,6 +643,7 @@ ul:hover {
   margin: 5px 0px 0px 5px;
   border-radius: 10px;
   opacity: 90%;
+  z-index: 20;
 }
 .text-what-is_github:hover ul,
 ul:hover {
@@ -728,11 +730,15 @@ ul:hover {
   background-color: var(--just_white);
   display: none;
   position: absolute;
-  width: 300px;
+  width: 40%;
   border-radius: 10px;
-  opacity: 90%;
+  opacity: 97%;
+  right: 10%;
   border: solid var(--gray_dark) 2px;
   padding: 0px;
+}
+.git-configure .git_command {
+  margin: 10px auto;
 }
 .git-configure:hover ul,
 ul:hover {

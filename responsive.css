@@ -45,9 +45,10 @@
     width: 100%;
   }
   .menu{
+   right: 5%;
    height: 900px;
    width: 60%;
-   position: sticky;
+   
   }
   /*------------HEADER-------------*/
 
@@ -118,6 +119,10 @@
   .install-git summary {
     height: 40px;
     width: 150px;
+  }
+  .install-git ul{
+    width: 90%;
+    right: 5%;
   }
   .cat_list {
     height: 170px;
@@ -221,7 +226,8 @@
     width: 150px;
   }
   .git-configure ul {
-    width: 70%;
+    width: 80%;
+    right: 10%;
   }
 
   /*--------------------------------------------
