@@ -558,6 +558,9 @@ ul:hover {
 /*-----------------------------------------------
 ------------SECTION WHAT IS GITHUB----------------
 -------------------------------------------------*/
+.section-what-is_github {
+  height: 650px;
+}
 .section-github {
   margin-top: 0px;
   height: 600px;
@@ -634,23 +637,86 @@ ul:hover {
   font-size: 12px;
   color: var(--black);
 }
-.text-what-is_github ul {
-  background-color: var(--just_white);
+.text-what-is_github_info {
   display: none;
-  list-style: none;
-  padding: 0px;
-  width: 60%;
-  margin: 5px 0px 0px 5px;
+  position: relative;
+  z-index: 2;
+  background-color: var(--just_white);
+  height: 90%;
+  width: 50%;
+  left: 25%;
+  bottom: 200px;
+  margin-top: -300px;
   border-radius: 10px;
-  opacity: 90%;
-  z-index: 20;
 }
-.text-what-is_github:hover ul,
-ul:hover {
-  display: block;
+.text-what-is_github_info h2 {
+  color: var(--just_white);
+  padding: 20px;
+  text-align: center;
+  background-color: var(--green_slime);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.text-what-is_github p {
-  margin: 8px 10px 8px 10px;
+#icon-close-what-is_github_info {
+  position: absolute;
+  right: 20px;
+}
+.text-what-is_github_info p {
+  text-align: center;
+  color: var(--black);
+  padding: 20px 40px;
+}
+/*------------------------------*/
+.text-why-use_github_info {
+  display: none;
+  position: relative;
+  z-index: 2;
+  background-color: var(--just_white);
+  height: 90%;
+  width: 50%;
+  left: 25%;
+  bottom: 200px;
+  margin-top: -300px;
+  border-radius: 10px;
+}
+.text-why-use_github_info h2 {
+  color: var(--just_white);
+  padding: 20px;
+  text-align: center;
+  background-color: var(--green_slime);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.text-why-use_github_info p {
+  text-align: center;
+  color: var(--black);
+  padding: 20px 40px;
+}
+/*--------------------------------*/
+.text_github_developers_info {
+  display: ;
+  position: relative;
+  z-index: 2;
+  background-color: var(--just_white);
+  height: 90%;
+  width: 50%;
+  left: 25%;
+  bottom: 200px;
+  margin-top: -300px;
+  border-radius: 10px;
+}
+.text_github_developers_info h2 {
+  color: var(--just_white);
+  padding: 20px;
+  text-align: center;
+  background-color: var(--green_slime);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.text_github_developers_info p {
+  text-align: center;
+  color: var(--black);
+  padding: 20px 40px;
 }
 .carousel__actions {
   display: none;
@@ -674,7 +740,7 @@ ul:hover {
   grid-column-start: 2;
 }
 .block-repo {
-  margin-top: 10px;
+  margin-top: 0px;
   display: grid;
   grid-template-columns: 48% 4% 48%;
   grid-column-start: 2;
@@ -698,13 +764,13 @@ ul:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 20px;
+  padding: 10px 20px;
   /*border: solid var(--gray_dark) 2px;*/
   box-shadow: 8px 8px 8px 8px rgba(89, 73, 30, 0.15);
   border-radius: 10px;
   text-align: center;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   height: 300px;
 }
 .repo p {
@@ -817,4 +883,27 @@ ul:hover {
 .branches_picture {
   height: 380px;
   width: 60%;
+}
+
+.blocks-commands-info_remote {
+  width: 100vw;
+  margin-top: 30px;
+}
+.information_two {
+  width: 78%;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid var(--gray_dark) 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.information_two_info {
+  grid-column-start: 1;
+}
+.information_two_info p {
+  padding-right: 30px;
+}
+.information_two_img {
+  grid-column-start: 2;
 }
