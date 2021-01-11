@@ -48,7 +48,7 @@
    right: 5%;
    height: 900px;
    width: 60%;
-   
+
   }
   /*------------HEADER-------------*/
 
@@ -138,25 +138,40 @@
 .what_is-github .carousel__item--hidden {
   display: none;
 }
-
+.what_is-github{
+  display: flex;
+  align-items: center;
+}
 .what_is-github .carousel__item--visible {
   display: block;
   animation: fadeVisibility 0.5s;
 }
 .carousel__item:hover ~ .carousel__item {
-  transform: translate3d(80px, 0, 0);
+  transform: none;
 }
 .what_is-github:hover .carousel__item {
-  opacity
+  opacity: 10;
 }
 .what_is-github:hover .carousel__item:hover {
-  transform: scale(1.3);
-  opacity: 1;
+  transform: none;
+  opacity: 10;
+}
+.text-what-is_github_info {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  background-color: var(--just_white);
+  height: 80%;
+  width: 80%;
+  left: calc(50% - 44%);
+  top: 80px;
+  border-radius: 10px;
 }
  .carousel__actions {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  transform: translateY(-50%);
 }
 .carousel__actions button {
   border-radius: 50px;
@@ -175,15 +190,6 @@
   margin-right: 20px;
 }
 
-@keyframes fadeVisibility {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: opacity linear;
-  }
-}
 
   /*---------------SETION REPOSITORY---------------------*/
   .repository {
@@ -192,8 +198,8 @@
     display: grid;
     grid-template-rows: 20% 80%;
     grid-template-columns: 2% 96% 2%;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    top: -100px;
+    position: relative;
   }
   .repository-title {
     display: flex;
@@ -244,6 +250,10 @@
     border: solid var(--gray_dark) 2px;
     border-radius: 0px;
   }
+  .information li{
+    margin-left: -20px;
+    margin-right: 10px;
+  }
   .files-status {
     grid-column-start: 2;
     text-align: inherit;
@@ -251,8 +261,11 @@
     border-radius: 0px;
   }
   .files-status li {
-    padding-top: 5px;
+    padding-top: 10px;
+    margin-left: -20px;
+    padding-right: 0px;
   }
+
   .picture-cycle_work {
     height: 250px;
     display: grid;
@@ -270,3 +283,69 @@
   .branches_picture {
     width: 100%;
   }
+  /*-----------------------------------------*/
+  .information_two {
+  width: 100vw;
+  padding: 0px;
+  border-radius: 0;
+  border: none;
+  display: block;
+}
+.information_two_info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.information_two_info h2{
+  text-align: center;
+}
+.blocks-commands-info_remote_config {
+  background-color: var(--blue_sky);
+  border-radius: 20px;
+  width: 80%;
+  margin: calc(50% - 40%);
+}
+.blocks-commands-info_remote_config h3 {
+  color: var(--just_white);
+  padding: 15px;
+  text-align: center;
+}
+.blocks-commands-info_remote_config p {
+  display: none;
+}
+.information_two_info p {
+  width: 90%;
+  padding-right: 12%;
+  margin-left: calc(50% - 43%);
+}
+.information_two_info .git_command{
+  width: 90%;
+}
+.information_two_img {
+  display: none;
+}
+/*slide remote info*/
+.command_info_remote_config_style {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  background-color: var(--just_white);
+  height: 80%;
+  width: 80%;
+  left: calc(50% - 44%);
+  top: 80px;
+  border-radius: 10px;
+}
+.img-new_repo {
+  width: 260px;
+  height: 180px;
+  padding: 10px;
+  margin-left: -15px;
+}
+.img-URL_repo {
+  width: 260px;
+  height: 180px;
+  padding: 10px;
+  margin-left: -15px;
+}

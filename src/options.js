@@ -79,3 +79,92 @@ function moveToPrevSlide() {
 
   updateSlidePosition();
 }
+
+//SLIDES INFO
+const cover_ctn_carousel = document.getElementById("cover-ctn-slides");
+const slide_info_one = document.getElementById("slide-info_one");
+const slide_info_two = document.getElementById("slide-info_two");
+const slide_info_three = document.getElementById("slide-info_three");
+
+document
+  .getElementById("slides-info-carousel_one")
+  .addEventListener("click", show_slide_one);
+
+document
+  .getElementById("slides-info-carousel_two")
+  .addEventListener("click", show_slide_two);
+
+document
+  .getElementById("slides-info-carousel_three")
+  .addEventListener("click", show_slide_three);
+
+//-----------------------------------------------------------
+function show_slide_one() {
+  cover_ctn_carousel.style.display = "block";
+  slide_info_one.style.display = "block";
+}
+function show_slide_two() {
+  cover_ctn_carousel.style.display = "block";
+  slide_info_two.style.display = "block";
+}
+function show_slide_three() {
+  cover_ctn_carousel.style.display = "block";
+  slide_info_three.style.display = "block";
+}
+//---------------------------------------------------------------
+document
+  .getElementById("icon-close-slide-one")
+  .addEventListener("click", close_what_is_github);
+  document
+  .getElementById("icon-close-slide-two")
+  .addEventListener("click", close_what_is_github);
+  document
+  .getElementById("icon-close-slide-three")
+  .addEventListener("click", close_what_is_github);
+document
+  .getElementById("cover-ctn-slides")
+  .addEventListener("click", close_what_is_github);
+
+function close_what_is_github() {
+  if ((slide_info_one.style.display = "block")) {
+    slide_info_one.style.display = "none";
+    cover_ctn_carousel.style.display = "none";
+  }
+  if ((slide_info_two.style.display = "block")) {
+    slide_info_two.style.display = "none";
+    cover_ctn_carousel.style.display = "none";
+  }
+  if ((slide_info_three.style.display = "block")) {
+    slide_info_three.style.display = "none";
+    cover_ctn_carousel.style.display = "none";
+  }
+}
+//-------------------------------------------------------------
+//SLIDE REMOTE INFO
+const slide = document.getElementById("commad-info_remote_config");
+const cover_ctn_slide = document.getElementById("cover-ctn-slide");
+
+document
+.getElementById("blocks-commands-info_remote_config")
+.addEventListener("click", show_slide_remote);
+
+function show_slide_remote() {
+cover_ctn_slide.style.display = "block";
+slide.style.display = "block";
+}
+
+document
+.getElementById("cover-ctn-slide")
+.addEventListener("click", close_slide_remote);
+
+document
+.getElementById("icon-close-slides-remote")
+.addEventListener("click", close_slide_remote);
+
+function close_slide_remote() {
+  if ((slide.style.display = "block")) {
+    slide.style.display = "none";
+    cover_ctn_slide.style.display = "none";
+    console.log("hello");
+  }
+}

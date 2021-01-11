@@ -253,8 +253,19 @@ ul:hover {
   position: fixed;
   background: var(--just_white);
   z-index: 20;
+  animation-name: animateright;
+  animation-duration: 0.4s;
 }
-
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
 /*-------------------------------------------
 ---------------------HEADER------------------
 ---------------------------------------------*/
@@ -367,6 +378,7 @@ a {
   border-radius: 5px;
   display: grid;
   grid-template-columns: 10% 80% 10%;
+  width: 100vw;
 }
 
 .recomendation {
@@ -571,7 +583,7 @@ ul:hover {
 .what_is-github {
   height: 300px;
   white-space: nowrap;
-  margin: 70px 0px 0px 0px;
+  margin: 150px 0px 0px 0px;
   padding-bottom: 10px;
 }
 
@@ -589,13 +601,13 @@ ul:hover {
   margin: 10px;
 }
 .carousel__item:hover ~ .carousel__item {
-  transform: translate3d(50px, 0, 0);
+  transform: translate3d(20px, 0px, 0px);
 }
 .what_is-github:hover .carousel__item {
   opacity: 0.3;
 }
 .what_is-github:hover .carousel__item:hover {
-  transform: scale(1.1);
+  transform: scale(1);
   opacity: 1;
 }
 .carousel-item_img {
@@ -639,15 +651,15 @@ ul:hover {
 }
 .text-what-is_github_info {
   display: none;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  z-index: 5;
   background-color: var(--just_white);
-  height: 90%;
+  height: 80%;
   width: 50%;
   left: 25%;
-  bottom: 200px;
-  margin-top: -300px;
+  top: 100px;
   border-radius: 10px;
+  overflow: scroll;
 }
 .text-what-is_github_info h2 {
   color: var(--just_white);
@@ -657,67 +669,58 @@ ul:hover {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-#icon-close-what-is_github_info {
-  position: absolute;
-  right: 20px;
-}
+
 .text-what-is_github_info p {
   text-align: center;
   color: var(--black);
   padding: 20px 40px;
+  font-size: 20px;
+}
+#icon-close-slide-one {
+  position: absolute;
+  right: 20px;
+}
+#icon-close-slide-one:hover {
+  color: gray;
 }
 /*------------------------------*/
-.text-why-use_github_info {
-  display: none;
-  position: relative;
-  z-index: 2;
-  background-color: var(--just_white);
-  height: 90%;
-  width: 50%;
-  left: 25%;
-  bottom: 200px;
-  margin-top: -300px;
-  border-radius: 10px;
+#icon-close-slide-two {
+  position: absolute;
+  right: 20px;
 }
-.text-why-use_github_info h2 {
-  color: var(--just_white);
-  padding: 20px;
-  text-align: center;
-  background-color: var(--green_slime);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+#icon-close-slide-two:hover {
+  color: gray;
 }
-.text-why-use_github_info p {
-  text-align: center;
-  color: var(--black);
-  padding: 20px 40px;
+/*-------------------------------*/
+#icon-close-slide-three {
+  position: absolute;
+  right: 20px;
+}
+#icon-close-slide-three:hover {
+  color: gray;
 }
 /*--------------------------------*/
-.text_github_developers_info {
-  display: ;
-  position: relative;
-  z-index: 2;
-  background-color: var(--just_white);
-  height: 90%;
-  width: 50%;
-  left: 25%;
-  bottom: 200px;
-  margin-top: -300px;
-  border-radius: 10px;
+#cover-ctn-slides {
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 4;
+  display: none;
+  height: 100vh;
+  width: 100vw;
 }
-.text_github_developers_info h2 {
-  color: var(--just_white);
-  padding: 20px;
-  text-align: center;
-  background-color: var(--green_slime);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+/*------------------------------*/
+#slides-info_one {
+  display: none;
 }
-.text_github_developers_info p {
-  text-align: center;
-  color: var(--black);
-  padding: 20px 40px;
+#slides-info_two {
+  display: none;
 }
+#slides-info_thre {
+  display: none;
+}
+/*------------------------------*/
 .carousel__actions {
   display: none;
 }
@@ -730,8 +733,8 @@ ul:hover {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 20% 80%;
-  margin-top: 0px;
-  margin-bottom: 200px;
+  top: -10px;
+  position: relative;
 }
 .repository-title {
   display: flex;
@@ -750,13 +753,13 @@ ul:hover {
   grid-column-start: 1;
   width: 100%;
   height: 100%;
-  padding-top: 20px;
+  padding-top: 15px;
   display: flex;
   justify-content: flex-end;
 }
 .picture-team {
-  height: 100%;
-  width: 100%;
+  height: 95%;
+  width: 95%;
 }
 .repo {
   grid-column-start: 3;
@@ -765,7 +768,6 @@ ul:hover {
   justify-content: center;
   flex-direction: column;
   padding: 10px 20px;
-  /*border: solid var(--gray_dark) 2px;*/
   box-shadow: 8px 8px 8px 8px rgba(89, 73, 30, 0.15);
   border-radius: 10px;
   text-align: center;
@@ -792,6 +794,12 @@ ul:hover {
   justify-content: center;
   align-items: center;
 }
+.git-configure b {
+  padding: 5px;
+}
+.git-configure .git_command {
+  width: 85%;
+}
 .git-configure ul {
   background-color: var(--just_white);
   display: none;
@@ -816,7 +824,7 @@ ul:hover {
 }
 /*---------------------start git---------------------------*/
 .blocks-commands-info {
-  margin-top: 50px;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 10% 38% 4% 38% 10%;
 }
@@ -828,16 +836,22 @@ ul:hover {
 }
 
 .information h3 {
-  margin: 10px 10px;
+  margin: 15px 10px;
 }
-.start-git git_command {
+.information p {
+  padding-right: 30px;
+}
+.information .git_command {
+  width: 95%;
+}
+.start-git .git_command {
   display: flex;
   justify-content: center;
 }
 .git_command {
   background: var(--recomendation_gray);
   color: var(--just_white);
-  width: 86%;
+  width: 100%;
   height: 30px;
   display: flex;
   align-items: center;
@@ -855,8 +869,9 @@ ul:hover {
   border-radius: 10px;
 }
 .files-status li {
-  padding: 10px;
+  padding: 10px 30px 10px 0px;
 }
+
 .picture-cycle_work {
   display: grid;
   grid-template-columns: 15% 70% 15%;
@@ -884,19 +899,46 @@ ul:hover {
   height: 380px;
   width: 60%;
 }
-
+/*---------------------------------------*/
 .blocks-commands-info_remote {
   width: 100vw;
   margin-top: 30px;
 }
 .information_two {
-  width: 78%;
+  width: 77%;
   margin: 20px auto;
   padding: 15px;
   border-radius: 5px;
   border: solid var(--gray_dark) 2px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+#blocks-commands-info_remote_config {
+  background-color: var(--blue_sky);
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  margin: 10px 15px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto;
+  grid-column-start: 2;
+}
+#blocks-commands-info_remote_config img{
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+}
+.title-info_remote_config h3 {
+  background: var(--gray_soft);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 5px 35px 0px;
+  width: 100%;
 }
 .information_two_info {
   grid-column-start: 1;
@@ -906,4 +948,58 @@ ul:hover {
 }
 .information_two_img {
   grid-column-start: 2;
+}
+/*INFO REMOTE REPOSITORY*/
+.command_info_remote_config_style{
+  display: none;
+  position: fixed;
+  z-index: 5;
+  background-color: var(--just_white);
+  height: 80%;
+  width: 50%;
+  left: 25%;
+  top: 100px;
+  border-radius: 10px;
+  overflow: scroll;
+}
+.command_info_remote_config_style h2 {
+  color: var(--just_white);
+  padding: 20px;
+  text-align: center;
+  background-color: var(--green_slime);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#icon-close-slides-remote{
+  position: absolute;
+  right: 20px;
+}
+#icon-close-slides-remote:hover {
+  color: gray;
+}
+.command_info_remote_config_style p {
+  text-align: center;
+  color: var(--black);
+  padding: 20px 40px;
+  font-size: 20px;
+}
+.img-new_repo {
+  width: 320px;
+  height: 240px;
+  padding: 10px;
+}
+.img-URL_repo {
+  width: 320px;
+  height: 240px;
+  padding: 10px;
+}
+#cover-ctn-slide {
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 4;
+  display: none;
+  height: 100vh;
+  width: 100vw;
 }

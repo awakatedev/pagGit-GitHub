@@ -29,7 +29,7 @@
             <ul>
                 <li><a href="#what-is-git"><b>What is Git?</b></a></li>
                 <hr>
-                <li><a href="#list__install-git"><b>How instalt</b></a> </li>
+                <li><a href="#list__install-git"><b>How install</b></a> </li>
                 <li><a href="/">Install Git in Windows</a> </li>
                 <li><a href="/">Install Git in IOS</a> </li>
                 <li><a href="/">Install Git in Linux</a> </li>
@@ -258,21 +258,21 @@
         <i class="fas fa-angle-left"></i>
         </button>
       </div>
-      <div class="carousel__item carousel__item--visible">
+      <div class="carousel__item carousel__item--visible" id="slides-info-carousel_one">
         <img class="carousel-item_img" src="./pictures/pexels-photo-3183197.jpeg" alt="background-image">
           <div class="text-what-is_github">
             <summary><b>What is GitHub?</b><a>Read more</a></summary>
           </div>
           </div>
 
-        <div class="carousel__item" >
+        <div class="carousel__item" id="slides-info-carousel_two">
           <img class="carousel-item_img" src="./pictures/pexels-photo-3861964.jpeg" alt="background-image">
              <div class="text-what-is_github">
                <summary><b>Why use GitHub?</b><a>Read more</a> </summary>
              </div>
          </div>
 
-         <div class="carousel__item">
+         <div class="carousel__item" id="slides-info-carousel_three">
           <img src="./pictures/pexels-photo-2653362.jpeg" alt="background-image">
             <div class="text-what-is_github">
               <summary><b>GitHub isn't just</br> for Developers</b><a>Read more</a></summary>
@@ -289,24 +289,24 @@
        </div>
   </div>
 
-             <div class="text-what-is_github_info">
-                <h2>What is Gitub? <i class="fas fa-times" id="icon-close-what-is_github_info"></i></h2>
+             <div class="text-what-is_github_info" id="slide-info_one">
+                <h2>What is Gitub? <i class="fas fa-times" id="icon-close-slide-one"></i></h2>
                 <hr>
                 <p >It's a (collaborative development platform) to host projects using the Git version control sistem. it is mainly used for creating source code for computer programs. The software that runs GitHub was written in Ruby on Rails. ince junuary 2010, has operated under de name GitHub,inc.it was previously known as logical Awesome LLC. The code for projects hosted on GitHub is typically stored publicly.
                 On June 4, 2018 Microsoft bought GitHub for the amount of 7500 millions dollars, at the beginning the change of owner generated conserns and exit of some projects from this repository, howevwe they were not representative. GitHub continues to be the most important collaboration platform for Open Source projects.</p>
              </div>
-              <div class="text-why-use_github_info">
-                <h2>Why use GitHub? <i class="fas fa-times" id="icon-close-what-is_github_info"></i></h2>
+              <div class="text-what-is_github_info" id="slide-info_two">
+                <h2>Why use GitHub? <i class="fas fa-times" id="icon-close-slide-two"></i></h2>
                 <hr>
                 <p>A good GitHub profile can impress the interviwer. for thar reason Millions of developers use GitHub to share code and build businesses. In 2017, the Github community reached 24 million developers working across 67 million repositories.</p>
               </div>
-               <div class="text_github_developers_info">
-                <h2>GitHub isn't just for Developers <i class="fas fa-times" id="icon-close-what-is_github_info"></i></h2>
+               <div class="text-what-is_github_info" id="slide-info_three">
+                <h2>GitHub isn't just for Developers <i class="fas fa-times" id="icon-close-slide-three"></i></h2>
                 <hr>
                 <p>All this talk about how GitHub is ideal for programers may have you believing that they are the only ones who will find it useful. Although it's a lot less common, you can actually use GitHub for any type of files. If you have a team that is constantly making changes to a word document for example, you could use GitHub as you version contol system.this practice isn't common, since there are better alternatives in most cases, but it's sometimes to keep in mind. </p>
               </div>
 
-              <div id="cover-ctn-carousel"></div>
+              <div id="cover-ctn-slides"></div>
  </section>
 
              <!--SECTION HOW USE GIT-->
@@ -325,7 +325,7 @@
         <p>A repository (usually abbreviated to "repo")  is a storage location for software packages. Often a table of contents is stored, as well as metadata. Repositories group packages so is a location where all the files for a particular project are stored. Each projects has its own repo, and you can access it with a unique URL.</p>
 
         <div class="git-configure">
-          <summary><b>Configure your Git</b></summary>
+          <summary><b>Configure your Git</b> <i class="fas fa-angle-down"></i></summary>
           <ul>
             <p>Remember that Git is optimized for teamwork, therefore, we must give you a little information about us. We should not do it every time we execute a command, it is enough to execute the following commands only once with your information:
                <b class="git_command">$ git config --global user.email "your@email.com"</b>
@@ -347,7 +347,7 @@
           which will temporarily save our files (when we execute a special command for that) and will allow us, later, to save these changes in the repository (also with a special command).</p>
            <h3>Commands to move files between Git states:</h3>
 
-       <div>
+
          <p><b class="git_command" id="command-status">$ git status</b> Allows us to see the status of all our files and folders.</p>
          <p><b class="git_command" id="command-add">$ git add file-folder-mane</b> Helps us move files from untraked or unstaged to staged state. We can use git file-or-folder-name to add individual files and or folders or git add -A to move all files
                                             in our project (both Untrackeds and Unstageds).</p>
@@ -361,7 +361,7 @@
                                               <li><b class="git_command">$ git rm --cached</b> Move the files that we indicate to the Untraked state.</li>
                                               <li><b class="git_command">$ git rm --force</b> Delete the files from Git and from te hard disk. Git keeps the record of the existence of the files, so we can recover them if necessary (but we must use more advanced commands).</li>
                                             </ul></p>
-       </div>
+
     </div>
 
     <div class="files-status">
@@ -395,6 +395,7 @@
       <b class="git_command" id="command-show">$ git show commit</b>The git show command shows us the changes that have existed on a file and is very useful to detect when certain changes occurred, what was broken and how we can solve it. But we can be more detailed.
       <b class="git_command" id="command-diff">$ git diff [commit A] [commit B]</b>If we want to see the difference between one version and another, not necessarily all the changes since the creation of the file, we can use the git diff command.
       <b class="git_command" id="command-log">$ git log</b>If we want watch all your commits we could use the git log command and you can get the ID of your commits with this command.
+      <b class="git_command" id="command-swich">$ git swich</b>This command let us change to branches.
       </p>
     </div>
 
@@ -414,21 +415,39 @@
     </div>
   </section>
 
-  <section class="bocks-commands-info_remote">
+  <section class="blocks-commands-info_remote">
     <div class="information_two">
       <div class="information_two_info">
         <h2>Synchronizing changes betwen the local repository with the remote and cloning repositories:</h2>
-        <p><b class="git_command" id="command-clone">$ git clone Repo-URL</b>this command allows us to clone a remote project and download it to our files.
+
+        <p><b class="git_command" id="command-clone">$ git clone Repository-URL</b>this command allows us to clone a remote project and download it to our files.
         <b class="git_command" id="command-fetch">$ git fetch</b>
         <b class="git_command" id="command-pull">$ git pull [locale-branch] [remote-branch]</b> this command brings the changes from the remote repository to our local repository.
         <b class="git_command" id="command-push">$ git push [locale-branch] [remote-branch]</b>this command loads the current commit to the remote branch.
         </p>
       </div>
 
-      <div class="information_two_img">
-        <img src="" alt="">
+        <div id="blocks-commands-info_remote_config">
+          <img src="pictures/screenshot-reados-2021-01-10-18-35-15.png" alt="img-remote-repo">
+          <div class="title-info_remote_config">
+            <h3>Make your remote repository and synchronizing with the local <i class="fas fa-angle-down"></i></h3>
+          </div>
+        </div>
       </div>
-    </div>
+
+          <div class="command_info_remote_config_style" id="commad-info_remote_config">
+            <h2>Make your remote repository and synchronizing with the local <i class="fas fa-times" id="icon-close-slides-remote"></i></h2>
+             <p>To synchronize your remote repository with your local one and be able to push your project, you only need to create a new repository in your GitHub account with the name of your project, then you will click on where the file icon is and copy the repository URL . next in your terminal you will write the following command.
+               <img src="pictures/new repository.png" alt="new-repo" class="img-new_repo">
+               <img src="pictures/URL-repo.png" alt="URL_repo" class="img-URL_repo">
+             <b class="git_command">$ git remote add main Repository-URL</b>
+             You will verify that a remote source exists with the command.
+             <b class="git_command">$ git remote -v</b> So there you cn see te name of you remote repository.
+             Now you will can do push to thr remote repository, but a more secure way to work with the proyects is te keys SSH. You can synchronize your proyect with this command.
+             <b class="git_command">$ ssh-keygen -t rsa -b 4096 -C "yourmail@"</b></p>
+          </div>
+
+          <div id="cover-ctn-slide"></div>
   </section>
 </main>
 
