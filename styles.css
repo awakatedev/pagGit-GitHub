@@ -5,10 +5,10 @@
   margin: 0px;
 }
 :root {
-  /*colors*/
   --black: #000000;
   --gray_dark: #0e0e0e0e;
   --recomendation_gray: #0e0e0e;
+  --purple-header-others: #0a0825;
   --purple-background: #03001c;
   --just_white: #ffffff;
   --gray: #777777;
@@ -571,8 +571,12 @@ ul:hover {
 ------------SECTION WHAT IS GITHUB----------------
 -------------------------------------------------*/
 .section-what-is_github {
-  height: 650px;
+  height: 500px;
+  background-color: var(--purple-header-others);
+  margin-top: 30px;
+  /*  margin-bottom: 30px;*/
 }
+
 .section-github {
   margin-top: 0px;
   height: 600px;
@@ -583,7 +587,7 @@ ul:hover {
 .what_is-github {
   height: 300px;
   white-space: nowrap;
-  margin: 150px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
   padding-bottom: 10px;
 }
 
@@ -598,7 +602,7 @@ ul:hover {
   transition: 400ms all;
   transform-origin: center left;
   position: relative;
-  margin: 10px;
+  margin: 30px;
 }
 .carousel__item:hover ~ .carousel__item {
   transform: translate3d(20px, 0px, 0px);
@@ -611,18 +615,11 @@ ul:hover {
   opacity: 1;
 }
 .carousel-item_img {
-  width: 300px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .text-what-is_github {
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  opacity: 1;
-  transition: 400ms opacity;
   position: absolute;
   top: 270px;
   right: 0px;
@@ -729,31 +726,41 @@ ul:hover {
 ------------SECTION HOW USE GIT--------------
 --------------------------------------------*/
 .repository {
-  height: 500px;
+  width: 100vw;
+  height: 600px;
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 10% 90%;
   top: -10px;
   position: relative;
+  background-color: var(--purple-header-others);
 }
 .repository-title {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   grid-row-start: 1;
   grid-column-start: 2;
+  background-color: var(--just_white);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .block-repo {
+  background-color: var(--just_white);
   margin-top: 0px;
   display: grid;
-  grid-template-columns: 48% 4% 48%;
+  grid-template-columns: 49% 2% 49%;
   grid-column-start: 2;
   grid-row-start: 2;
+  margin-bottom: 100px;
+  padding: 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .picture__team {
   grid-column-start: 1;
-  width: 100%;
-  height: 100%;
-  padding-top: 15px;
+  width: 95%;
+  height: 95%;
   display: flex;
   justify-content: flex-end;
 }
@@ -768,12 +775,12 @@ ul:hover {
   justify-content: center;
   flex-direction: column;
   padding: 10px 20px;
-  box-shadow: 8px 8px 8px 8px rgba(89, 73, 30, 0.15);
+  box-shadow: 8px 10px 10px 8px rgba(89, 73, 30, 0.15);
   border-radius: 10px;
   text-align: center;
   margin-right: 20px;
-  margin-top: 10px;
   height: 300px;
+  background-color: var(--just_white);
 }
 .repo p {
   color: var(--recomendation_gray);
@@ -826,7 +833,7 @@ ul:hover {
 .blocks-commands-info {
   margin-top: 100px;
   display: grid;
-  grid-template-columns: 10% 38% 4% 38% 10%;
+  grid-template-columns: 8% 40% 4% 40% 8%;
 }
 .information {
   grid-column-start: 2;
@@ -834,12 +841,14 @@ ul:hover {
   border-radius: 10px;
   padding: 15px;
 }
-
 .information h3 {
   margin: 15px 10px;
 }
 .information p {
-  padding-right: 30px;
+  padding-right: 10px;
+}
+.information ul{
+  margin-bottom: 20px;
 }
 .information .git_command {
   width: 95%;
@@ -868,6 +877,7 @@ ul:hover {
   padding: 15px;
   border-radius: 10px;
 }
+
 .files-status li {
   padding: 10px 30px 10px 0px;
 }
@@ -887,7 +897,7 @@ ul:hover {
 }
 .work-cycle-one {
   height: 80%;
-  width: 70%;
+  width: 100%;
 }
 .picture-branch {
   height: 380px;
@@ -902,13 +912,16 @@ ul:hover {
 /*---------------------------------------*/
 .blocks-commands-info_remote {
   width: 100vw;
-  margin-top: 30px;
+  margin-top: 100px;
+  background-color: var(--purple-header-others);
+  padding-top: 50px;
 }
 .information_two {
+  background-color: var(--just_white);
   width: 77%;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: solid var(--gray_dark) 2px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -918,20 +931,28 @@ ul:hover {
   border-radius: 15px;
   width: 300px;
   height: 350px;
-  margin: 10px 15px;
+  margin: 10px auto;
   position: relative;
   overflow: hidden;
   margin: 10px auto;
   grid-column-start: 2;
+  box-shadow: 0px 10px 10px 8px rgba(89, 73, 30, 0.15);
 }
-#blocks-commands-info_remote_config img{
+#blocks-commands-info_remote_config img {
   width: 300px;
-  height: 350px;
+  height: 280px;
   object-fit: cover;
 }
-.title-info_remote_config h3 {
-  background: var(--gray_soft);
-  color: var(--black);
+.title-info_remote_config {
+  position: absolute;
+  top: 250px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+}
+.title-info_remote_config summary {
+  background: var(--blue_sky);
+  color: var(--just_white);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -940,7 +961,11 @@ ul:hover {
   padding: 10px 5px 35px 0px;
   width: 100%;
 }
+.title-info_remote_config summary:hover{
+  color: var(--gray_soft);
+}
 .information_two_info {
+  margin-top: -255px;
   grid-column-start: 1;
 }
 .information_two_info p {
@@ -950,7 +975,7 @@ ul:hover {
   grid-column-start: 2;
 }
 /*INFO REMOTE REPOSITORY*/
-.command_info_remote_config_style{
+.command_info_remote_config_style {
   display: none;
   position: fixed;
   z-index: 5;
@@ -970,7 +995,7 @@ ul:hover {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-#icon-close-slides-remote{
+#icon-close-slides-remote {
   position: absolute;
   right: 20px;
 }
@@ -1002,4 +1027,14 @@ ul:hover {
   display: none;
   height: 100vh;
   width: 100vw;
+}
+.img-work_cicle-github {
+  height: 450px;
+  width: 430px;
+  grid-column-start: 2;
+  margin: 5px auto;
+}
+.img-work_cicle-github img {
+  height: 100%;
+  width: 100%;
 }

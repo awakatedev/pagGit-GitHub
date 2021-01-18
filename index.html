@@ -135,6 +135,7 @@
       <div class="button__git-github">
         <a href="#" class="button-git">Git page <i class="fas fa-sign-in-alt"></i></a>
       </div>
+      <img src="pictures/" alt="">
     </div>
   </div>
 
@@ -147,7 +148,6 @@
          Git was created by Linus Torvalds in 2005 for development the Linux kernel, with other kernel developers contributing to its beginning.</br> Since 2005, Junio Hamano has been the core maintainer. As with most other distributed version-control systems,
          and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server.
          Git is free and open-source software distributed under GNU General Public.</p>
-
     </div>
 
     <div class="what_is_git2">
@@ -249,7 +249,7 @@
 
   <!--CAROUSEL WHAT IS GITHUB-->
   <section class="section-what-is_github">
-  <div class="section-github" id="section-github">
+    <div class="section-github" id="section-github">
 
     <div class="what_is-github">
 
@@ -279,8 +279,6 @@
             </div>
          </div>
 
-         <!--BOTTONS SCROLL-->
-
         <div class="carousel__actions">
            <button id="carousel__button--next" aria-label="Next slide">
              <i class="fas fa-angle-right"></i>
@@ -307,8 +305,8 @@
               </div>
 
               <div id="cover-ctn-slides"></div>
+   </div>
  </section>
-
              <!--SECTION HOW USE GIT-->
   <section class="repository" id="start-git">
     <div class="repository-title">
@@ -362,6 +360,16 @@
                                               <li><b class="git_command">$ git rm --force</b> Delete the files from Git and from te hard disk. Git keeps the record of the existence of the files, so we can recover them if necessary (but we must use more advanced commands).</li>
                                             </ul></p>
 
+    <h2>Branches, Merge, and how show commits and compare changes:</h2>
+      <p><b class="git_command" id="command-branch">$ git branch branch-name</b>When you start a repository, By defalul you are located in the master branch. This command creates a new branch where you will have a copy of your project and there you can make changes, correct bugs and do experiments, it does not affect your main branch. and if you want to add your changes to the main branch you can do a git merge.
+      <b class="git_command" id="command-checkout">$ git checkout branch-name</b>This command is to jump between branches, when you are located in a branch you can see only its state and not that of other branches, to see the changes of another branch and be able to modify it we use the git checkout.
+      <b class="git_command" id="command.checkout-id">$ git checkout commit-ID</b>This command let us return in the time. we coan return to wharevwe last vertion of our project, this command is to a form to make news branches and jump betwen thre.
+      <b class="git_command" id="command-merge">$ git merge branch-name</b>Whit this command you will can add the changes in a branch in another branch and this make a fussion whit the content to the 2 branches for example add the changes in your master branch.
+      <b class="git_command" id="command-show">$ git show commit</b>The git show command shows us the changes that have existed on a file and is very useful to detect when certain changes occurred, what was broken and how we can solve it. But we can be more detailed.
+      <b class="git_command" id="command-diff">$ git diff [commit A] [commit B]</b>If we want to see the difference between one version and another, not necessarily all the changes since the creation of the file, we can use the git diff command.
+      <b class="git_command" id="command-log">$ git log</b>If we want watch all your commits we could use the git log command and you can get the ID of your commits with this command.
+      <b class="git_command" id="command-swich">$ git swich</b>This command let us change to branches.
+      </p>
     </div>
 
     <div class="files-status">
@@ -376,31 +384,12 @@
           <li><b>Untracked files:</b> These are files that DO NOT live inside Git, only on the hard drive. They have never been affected by git add, so Git has no records of their existence.
                                       Remember that there is a very rare case where files have two states at the same time: staged and untracked. This happens when you save the changes to a file in the Staging area (with the git add command), but before committing to save the changes in the repository you make new changes that have not yet been saved in the Staging area (in Actually, everything still works the same but it's a bit fun).</li>
         </ul>
-    </div>
-  </section>
-
-  <div class="picture-cycle_work">
+<div class="picture-cycle_work">
     <div class="picture-work-cycle-one">
       <img src="pictures/descarga.png" alt="work-cycle-one" class="work-cycle-one">
     </div>
   </div>
-
-  <section class="blocks-commands-info">
-    <div class="information">
-      <h2>Branches, Merge, and how show commits and compare changes:</h2>
-      <p><b class="git_command" id="command-branch">$ git branch branch-name</b>When you start a repository, By defalul you are located in the master branch. This command creates a new branch where you will have a copy of your project and there you can make changes, correct bugs and do experiments, it does not affect your main branch. and if you want to add your changes to the main branch you can do a git merge.
-      <b class="git_command" id="command-checkout">$ git checkout branch-name</b>This command is to jump between branches, when you are located in a branch you can see only its state and not that of other branches, to see the changes of another branch and be able to modify it we use the git checkout.
-      <b class="git_command" id="command.checkout-id">$ git checkout commit-ID</b>This command let us return in the time. we coan return to wharevwe last vertion of our project, this command is to a form to make news branches and jump betwen thre.
-      <b class="git_command" id="command-merge">$ git merge branch-name</b>Whit this command you will can add the changes in a branch in another branch and this make a fussion whit the content to the 2 branches for example add the changes in your master branch.
-      <b class="git_command" id="command-show">$ git show commit</b>The git show command shows us the changes that have existed on a file and is very useful to detect when certain changes occurred, what was broken and how we can solve it. But we can be more detailed.
-      <b class="git_command" id="command-diff">$ git diff [commit A] [commit B]</b>If we want to see the difference between one version and another, not necessarily all the changes since the creation of the file, we can use the git diff command.
-      <b class="git_command" id="command-log">$ git log</b>If we want watch all your commits we could use the git log command and you can get the ID of your commits with this command.
-      <b class="git_command" id="command-swich">$ git swich</b>This command let us change to branches.
-      </p>
-    </div>
-
-    <div class="files-status">
-      <h2>What is a branch and how does a Merge work in Git?</h2>
+          <h2>What is a branch and how does a Merge work in Git?</h2>
       <p>Git is a very accurate database with all the changes and growth that our project has had. Commits are the only way to keep track of changes. But branches amplify Git's potential much more.
          All commits are applied on a branch.</br>
          By default, we always start at the master branch (but you can rename it if you don't like it) and create new branches from there to create independent workflows.
@@ -411,15 +400,22 @@
          Just keep in mind that combining these branches (yes, “merging”) can create conflicts. Some files may be different in both branches. Git is very smart and can try to join these changes automatically, but it doesn't always work. In some cases, we are the ones who must resolve these conflicts "by hand"</p>
       <div class="picture-branch">
         <img src="./pictures/branches.png" alt="" class="branches_picture">
-      </div>
     </div>
   </section>
 
+<!--INFO REMOTE REPOSITORY-->
   <section class="blocks-commands-info_remote">
     <div class="information_two">
-      <div class="information_two_info">
         <h2>Synchronizing changes betwen the local repository with the remote and cloning repositories:</h2>
 
+      <div id="blocks-commands-info_remote_config">
+          <img src="pictures/slide_remote.jpg" alt="">
+          <div class="title-info_remote_config">
+            <summary>Make your remote repository and synchronizing with the local for URL and SSH key<i class="fas fa-angle-down"></i></summary>
+          </div>
+      </div>
+
+      <div class="information_two_info">
         <p><b class="git_command" id="command-clone">$ git clone Repository-URL</b>this command allows us to clone a remote project and download it to our files.
         <b class="git_command" id="command-fetch">$ git fetch</b>
         <b class="git_command" id="command-pull">$ git pull [locale-branch] [remote-branch]</b> this command brings the changes from the remote repository to our local repository.
@@ -427,18 +423,15 @@
         </p>
       </div>
 
-        <div id="blocks-commands-info_remote_config">
-          <img src="pictures/screenshot-reados-2021-01-10-18-35-15.png" alt="img-remote-repo">
-          <div class="title-info_remote_config">
-            <h3>Make your remote repository and synchronizing with the local <i class="fas fa-angle-down"></i></h3>
-          </div>
-        </div>
+<div class="img-work_cicle-github">
+  <img src="pictures/img-work_cicle-github.png" alt="">
+</div>
       </div>
 
           <div class="command_info_remote_config_style" id="commad-info_remote_config">
             <h2>Make your remote repository and synchronizing with the local <i class="fas fa-times" id="icon-close-slides-remote"></i></h2>
              <p>To synchronize your remote repository with your local one and be able to push your project, you only need to create a new repository in your GitHub account with the name of your project, then you will click on where the file icon is and copy the repository URL . next in your terminal you will write the following command.
-               <img src="pictures/new repository.png" alt="new-repo" class="img-new_repo">
+               <img src="pictures/new-repository.png" alt="new-repo" class="img-new_repo">
                <img src="pictures/URL-repo.png" alt="URL_repo" class="img-URL_repo">
              <b class="git_command">$ git remote add main Repository-URL</b>
              You will verify that a remote source exists with the command.
