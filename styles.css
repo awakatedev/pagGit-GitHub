@@ -847,7 +847,7 @@ ul:hover {
 .information p {
   padding-right: 10px;
 }
-.information ul{
+.information ul {
   margin-bottom: 20px;
 }
 .information .git_command {
@@ -915,6 +915,7 @@ ul:hover {
   margin-top: 100px;
   background-color: var(--purple-header-others);
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .information_two {
   background-color: var(--just_white);
@@ -961,7 +962,7 @@ ul:hover {
   padding: 10px 5px 35px 0px;
   width: 100%;
 }
-.title-info_remote_config summary:hover{
+.title-info_remote_config summary:hover {
   color: var(--gray_soft);
 }
 .information_two_info {

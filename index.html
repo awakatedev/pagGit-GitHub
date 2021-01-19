@@ -417,8 +417,8 @@
 
       <div class="information_two_info">
         <p><b class="git_command" id="command-clone">$ git clone Repository-URL</b>this command allows us to clone a remote project and download it to our files.
-        <b class="git_command" id="command-fetch">$ git fetch</b>
-        <b class="git_command" id="command-pull">$ git pull [locale-branch] [remote-branch]</b> this command brings the changes from the remote repository to our local repository.
+        <b class="git_command" id="command-fetch">$ git fetch</b>this command download the remote repository at the local repository.
+        <b class="git_command" id="command-pull">$ git pull [locale-branch] [remote-branch]</b> this command it's a fetch but brings the changes from the remote repository to our local repository including branches.
         <b class="git_command" id="command-push">$ git push [locale-branch] [remote-branch]</b>this command loads the current commit to the remote branch.
         </p>
       </div>
@@ -435,9 +435,13 @@
                <img src="pictures/URL-repo.png" alt="URL_repo" class="img-URL_repo">
              <b class="git_command">$ git remote add main Repository-URL</b>
              You will verify that a remote source exists with the command.
-             <b class="git_command">$ git remote -v</b> So there you cn see te name of you remote repository.
-             Now you will can do push to thr remote repository, but a more secure way to work with the proyects is te keys SSH. You can synchronize your proyect with this command.
-             <b class="git_command">$ ssh-keygen -t rsa -b 4096 -C "yourmail@"</b></p>
+             <b class="git_command">$ git remote -v</b> So there you can see the name of you remote repository.
+             Now you will can do push to their remote repository, but a more secure way to work with the proyects is the keys SSH. You can synchronize your proyect with this command to will create a public and private key.
+             <b class="git_command">$ ssh-keygen -t rsa -b 4096 -C "yourmail@"</b>
+             Next to whrite this command to informate at the Operative System to exist an SSH key. .
+             <b class="git_command">$ eval $(ssh-agent -s)</b>
+             <b class="git_command">$ ssh-add ~/.ssh/id_rsa</b>
+             </p>
           </div>
 
           <div id="cover-ctn-slide"></div>
