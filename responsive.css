@@ -45,7 +45,7 @@
     width: 100%;
   }
   .menu{
-   right: 5%;
+   right: 0%;
    height: 900px;
    width: 60%;
 
@@ -90,6 +90,9 @@
     height: 600px;
   }
   /*---------------RECOMENDATION---------------------*/
+  .block-recomendation{
+    margin-top: 100px;
+  }
   .recomendation {
     display: inline;
     text-align: center;
@@ -138,6 +141,17 @@
   /*---------------------------------------------------
 ----------------SECTION WHAT IS GITHUB-----------------
 ------------------------------------------------------*/
+.satellite-picture{
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  right: 0;
+  margin-top: -30px;
+}
+.satellite-picture-img{
+  height: 50%;
+  width: 50%;
+}
 .what_is-github .carousel__item,
 .what_is-github .carousel__item--hidden {
   display: none;
@@ -278,7 +292,9 @@
     width: 80%;
     right: 10%;
   }
-
+  .wise-down{
+    display: none;
+  }
   /*--------------------------------------------
 ------------------start git------------------
 ----------------------------------------------*/
@@ -327,6 +343,9 @@
     width: 100%;
   }
   /*-----------------------------------------*/
+.wise-top{
+display: none; 
+}
   .blocks-commands-info_remote {
   width: 100vw;
   margin-top: 100px;
@@ -357,7 +376,7 @@
   background-color: var(--blue_sky);
   border-radius: 20px;
   width: 80%;
-  max-width: 350px; 
+  max-width: 350px;
   margin: 10px calc(50% - 42%);
 }
 #blocks-commands-info_remote_config img {

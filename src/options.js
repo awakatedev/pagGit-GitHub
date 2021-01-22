@@ -1,12 +1,6 @@
 //-------------MENU-------------
 
-document.getElementById("menu_icon").addEventListener("click", show_menu);
-document
-  .getElementById("close-menu_icon")
-  .addEventListener("click", close_menu);
-document.getElementById("cover-ctn-menu").addEventListener("click", close_menu);
-
-function show_menu() {
+document.getElementById("menu_icon").addEventListener("click", function() {
   let menu_block = document.getElementById("show-menu");
   let icon_close_menu = document.getElementById("close-menu_icon");
   let icon_menu = document.getElementById("menu_icon");
@@ -19,7 +13,12 @@ function show_menu() {
     icon_menu.style.display = "none";
     icon_close_menu.style.display = "block";
   }
-}
+});
+document
+  .getElementById("close-menu_icon")
+  .addEventListener("click", close_menu);
+document.getElementById("cover-ctn-menu").addEventListener("click", close_menu);
+
 
 function close_menu() {
   let menu_block = document.getElementById("show-menu");
@@ -88,29 +87,25 @@ const slide_info_three = document.getElementById("slide-info_three");
 
 document
   .getElementById("slides-info-carousel_one")
-  .addEventListener("click", show_slide_one);
+  .addEventListener("click", function() {
+  cover_ctn_carousel.style.display = "block";
+  slide_info_one.style.display = "block";
+});
 
 document
   .getElementById("slides-info-carousel_two")
-  .addEventListener("click", show_slide_two);
+  .addEventListener("click", function() {
+  cover_ctn_carousel.style.display = "block";
+  slide_info_two.style.display = "block";
+});
 
 document
   .getElementById("slides-info-carousel_three")
-  .addEventListener("click", show_slide_three);
-
-//-----------------------------------------------------------
-function show_slide_one() {
-  cover_ctn_carousel.style.display = "block";
-  slide_info_one.style.display = "block";
-}
-function show_slide_two() {
-  cover_ctn_carousel.style.display = "block";
-  slide_info_two.style.display = "block";
-}
-function show_slide_three() {
+  .addEventListener("click", function() {
   cover_ctn_carousel.style.display = "block";
   slide_info_three.style.display = "block";
-}
+});
+
 //---------------------------------------------------------------
 document
   .getElementById("icon-close-slide-one")
@@ -146,12 +141,10 @@ const cover_ctn_slide = document.getElementById("cover-ctn-slide");
 
 document
 .getElementById("blocks-commands-info_remote_config")
-.addEventListener("click", show_slide_remote);
-
-function show_slide_remote() {
+.addEventListener("click", function() {
 cover_ctn_slide.style.display = "block";
 slide.style.display = "block";
-}
+});
 
 document
 .getElementById("cover-ctn-slide")
