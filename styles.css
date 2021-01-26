@@ -4,6 +4,9 @@
 * {
   margin: 0px;
 }
+h2, h3, h4{
+  margin-bottom: 5px;
+}
 :root {
   --black: #000000;
   --gray_dark: #0e0e0e0e;
@@ -18,7 +21,57 @@
   --green_slime: #28a745;
   --hover_green: #28a770;
 }
-
+/*window emergent information*/
+.window-text_info {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  background-color: var(--just_white);
+  height: 80%;
+  width: 50%;
+  left: 25%;
+  top: 100px;
+  border-radius: 10px;
+  overflow: scroll;
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.window-text_info h2 {
+  color: var(--just_white);
+  padding: 20px;
+  text-align: center;
+  background-color: var(--green_slime);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.window-text_info p {
+  text-align: center;
+  color: var(--black);
+  padding: 20px 40px;
+  font-size: 20px;
+}
+.window-text_info p a{
+color: var(--black);
+text-decoration: underline;
+}
+.window-text_info li{
+  list-style: none;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+svg{
+  width: 100vw;
+}
 /*--------------------------------------------
 ---------------FIRST-BLOCK-------------------
  ---------------------------------------------*/
@@ -230,20 +283,6 @@ ul:hover {
   z-index: 4;
   display: none;
 }
-.menu nav ul {
-  list-style: none;
-  z-index: 5;
-}
-
-.menu nav ul li {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.menu nav ul li a {
-  color: var(--gray);
-  font-size: 18px;
-}
 .menu {
   top: 70px;
   right: 0px;
@@ -254,7 +293,7 @@ ul:hover {
   background: var(--just_white);
   z-index: 20;
   animation-name: animateright;
-  animation-duration: 0.4s;
+  animation-duration: 0.5s;
 }
 @keyframes animateright {
   from {
@@ -266,6 +305,71 @@ ul:hover {
     opacity: 1;
   }
 }
+.my-information{
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 70%;
+  text-align: center;
+}
+.my-information p{
+  padding: 10px;
+  color: var(--gray);
+}
+.my-github{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.my-github p{
+  font-size: 20px;
+  color: var(--black)
+}
+.img-my-github{
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin-left: 5px;
+  box-shadow: 2px 7px 4px 4px rgba(89, 73, 30, 0.15);
+}
+.img-my-github img{
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  object-fit: cover;
+}
+.social-media {
+  display: flex;
+  justify-content:center;
+  margin: 0 auto;
+}
+.social-media {
+  text-align: right;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.social-media_account_icon{
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  background-color: var(--gray_dark);
+}
+.social-media_account_info{
+  display: flex;
+  align-items: center;
+  background-color: var(--blue_sky);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: none;
+  height: 25px;
+}
+
 /*-------------------------------------------
 ---------------------HEADER------------------
 ---------------------------------------------*/
@@ -302,6 +406,7 @@ a {
   font-family: "Nanum Gothic", sans-serif;
   color: var(--just_white);
   font-weight: bold;
+  margin-bottom: -5px;
 }
 .title-header {
   color: var(--gray_soft);
@@ -373,7 +478,7 @@ a {
 ---------------section what is git---------------*/
 /*----recomendations git and github blocks-------*/
 .block-recomendation {
-  margin-top: 30px;
+  margin-top: 20px;
   color: var(--just_white);
   border-radius: 5px;
   display: grid;
@@ -471,32 +576,77 @@ a {
 
 /*what is git*/
 .what-is-git {
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: 10% 38% 4% 38% 10%;
+  margin-top: -10px;
+  margin-bottom: 0;
+  background-color: var(--purple-header-others);
+  width: 100vw;
+  height: 550px;
+  display: flex;
+  justify-content: center;
 }
 .what_is_git {
-  grid-column-start: 2;
-  border-radius: 10px;
-  padding: 30px 30px;
-  box-shadow: 8px 8px 8px 8px rgba(89, 73, 30, 0.15);
+  height: 200px;
+  width: 55%;
+  display: flex;
+  align-items: right;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin: -10px 5%;
+  background-color: transparent;
+  color: var(--gray_soft);
+  z-index: 3;
+}
+.what_is_git h1{
+    background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(62, 133, 238, 1) 1.1%,
+    rgba(227, 137, 240, 1) 40.7%,
+    rgba(243, 193, 124, 1) 79.7%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 250%;
 }
 .what_is_git2 {
-  grid-column-start: 4;
-  border-radius: 10px;
-  padding: 30px 30px;
-  box-shadow: 8px 8px 8px 8px rgba(89, 73, 30, 0.15);
+  position: relative;
+  right: 3%;
+  top: 180px;
+  width: 35%;
+  height: 350px;
+  border-radius: 13px;
+  padding: 15px 15px;
+  background-color: var(--just_white);
+  color: var(--black);
+  overflow: scroll;
+  box-decoration-break: slice;
 }
-.what_is_git p,
+.what_is_git2:hover {
+  background-color: var(--gray_soft);
+}
 .what_is_git2 p {
   margin-top: 10px;
+  font-size: 95%;
+  text-align: inherit;
+
+}
+.what_is_git p {
+  margin-top: 5px;
   font-size: 110%;
   text-align: inherit;
 }
+.ligths-background{
+  z-index: 0;
+  position: absolute;
+  width:130%
+}
+.ligths-background img{
+height: 100%;
+width: 100%;
 
+}
 /*--------------list to install git--------------*/
 .list__install-git {
-  margin-top: 100px;
+  margin-top: 30px;
   height: 90px;
   width: 100vw;
   display: grid;
@@ -532,34 +682,17 @@ a {
   border: solid var(--blue_sky) 1px;
   text-align: center;
 }
-.install-git ul {
-  background-color: var(--just_white);
-  display: none;
-  list-style: none;
-  padding: 0px;
+/*-----------------------------------*/
+#icon-close-slide {
   position: absolute;
-  width: 70%;
-  right: 20%;
-  border-radius: 10px;
-  z-index: 1;
+  right: 20px;
 }
-.install-git:hover ul,
-ul:hover {
-  display: block;
-}
-.install-git p {
-  margin: 8px 10px 8px 10px;
+#icon-close-slide:hover {
+  color: gray;
 }
 
-.install-git li {
-  background-color: var(--just_white);
-  margin: 15px 10px 5px 10px;
-  color: var(--black);
-}
-.install-git a {
-  color: var(--black);
-  text-decoration: underline;
-}
+/*-----------------------------------*/
+
 .cat_list {
   width: 270px;
   height: 270px;
@@ -569,23 +702,22 @@ ul:hover {
 /*-----------------------------------------------
 ------------SECTION WHAT IS GITHUB----------------
 -------------------------------------------------*/
-.satellite-picture{
+/*.satellite-picture{
   position: absolute;
-  height: 350px;
-  width: 350px;
+  height: 450px;
+  width: 450px;
   right: 70px;
 }
 .satellite-picture-img{
   height: 100%;
   width: 100%;
-}
+}*/
 .section-what-is_github {
   height: 500px;
+  width: 100vw;
   background-color: var(--purple-header-others);
   margin-top: -30px;
-  /*margin-bottom: 30px;*/
 }
-
 .section-github {
   margin-top: 0px;
   height: 600px;
@@ -595,14 +727,16 @@ ul:hover {
 }
 .what_is-github {
   height: 300px;
+  width: 80%;
   white-space: nowrap;
   margin: 80px 0px 0px 0px;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
-
 .carousel__item {
   z-index: 0;
-  width: 300px;
+  width: 30%;
   height: 350px;
   border-radius: 15px;
   overflow: hidden;
@@ -655,56 +789,7 @@ ul:hover {
   font-size: 12px;
   color: var(--black);
 }
-.text-what-is_github_info {
-  display: none;
-  position: fixed;
-  z-index: 5;
-  background-color: var(--just_white);
-  height: 80%;
-  width: 50%;
-  left: 25%;
-  top: 100px;
-  border-radius: 10px;
-  overflow: scroll;
-}
-.text-what-is_github_info h2 {
-  color: var(--just_white);
-  padding: 20px;
-  text-align: center;
-  background-color: var(--green_slime);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
 
-.text-what-is_github_info p {
-  text-align: center;
-  color: var(--black);
-  padding: 20px 40px;
-  font-size: 20px;
-}
-#icon-close-slide-one {
-  position: absolute;
-  right: 20px;
-}
-#icon-close-slide-one:hover {
-  color: gray;
-}
-/*------------------------------*/
-#icon-close-slide-two {
-  position: absolute;
-  right: 20px;
-}
-#icon-close-slide-two:hover {
-  color: gray;
-}
-/*-------------------------------*/
-#icon-close-slide-three {
-  position: absolute;
-  right: 20px;
-}
-#icon-close-slide-three:hover {
-  color: gray;
-}
 /*--------------------------------*/
 #cover-ctn-slides {
   top: 0;
@@ -716,7 +801,8 @@ ul:hover {
   height: 100vh;
   width: 100vw;
 }
-/*------------------------------*/
+
+/*-------------------------------*/
 #slides-info_one {
   display: none;
 }
@@ -746,8 +832,8 @@ ul:hover {
   background-color: var(--purple-header-others);
 }
 .repository-title {
+  height: 80px;
   padding-top: 20px;
-padding-bottom: 20px;
   display: flex;
   justify-content: center;
   grid-row-start: 1;
@@ -763,6 +849,7 @@ padding-bottom: 20px;
   grid-template-columns: 49% 2% 49%;
   grid-column-start: 2;
   grid-row-start: 2;
+  margin-top: 40px;
   margin-bottom: 100px;
   padding: 40px;
   border-bottom-left-radius: 10px;
@@ -819,6 +906,11 @@ padding-bottom: 20px;
 .git-configure .git_command {
   width: 85%;
 }
+.picture-config-l{
+  height: 300px;
+  width: 80%;
+  margin-left: 10%;
+}
 .git-configure ul {
   background-color: var(--just_white);
   display: none;
@@ -843,7 +935,7 @@ ul:hover {
 }
 /*---------------------start git---------------------------*/
 .blocks-commands-info {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 8% 40% 4% 40% 8%;
 }
@@ -852,9 +944,6 @@ ul:hover {
   border: solid var(--gray_dark) 2px;
   border-radius: 10px;
   padding: 15px;
-}
-.information h3 {
-  margin: 15px 10px;
 }
 .information p {
   padding-right: 10px;
@@ -989,39 +1078,7 @@ ul:hover {
   grid-column-start: 2;
 }
 /*INFO REMOTE REPOSITORY*/
-.command_info_remote_config_style {
-  display: none;
-  position: fixed;
-  z-index: 5;
-  background-color: var(--just_white);
-  height: 80%;
-  width: 50%;
-  left: 25%;
-  top: 100px;
-  border-radius: 10px;
-  overflow: scroll;
-}
-.command_info_remote_config_style h2 {
-  color: var(--just_white);
-  padding: 20px;
-  text-align: center;
-  background-color: var(--green_slime);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-#icon-close-slides-remote {
-  position: absolute;
-  right: 20px;
-}
-#icon-close-slides-remote:hover {
-  color: gray;
-}
-.command_info_remote_config_style p {
-  text-align: center;
-  color: var(--black);
-  padding: 20px 40px;
-  font-size: 20px;
-}
+
 .img-new_repo {
   width: 320px;
   height: 240px;
@@ -1032,16 +1089,6 @@ ul:hover {
   height: 240px;
   padding: 10px;
 }
-#cover-ctn-slide {
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  position: fixed;
-  z-index: 4;
-  display: none;
-  height: 100vh;
-  width: 100vw;
-}
 .img-work_cicle-github {
   height: 450px;
   width: 430px;
@@ -1051,4 +1098,52 @@ ul:hover {
 .img-work_cicle-github img {
   height: 100%;
   width: 100%;
+}
+/*##########################*/
+.section-github-info{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 8% 40% 4% 40% 8%;
+}
+.workflow-github {
+  grid-column-start: 2;
+  border: solid var(--gray_dark) 2px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.workflow-github p {
+  padding-right: 10px;
+}
+.information-github {
+  grid-column-start: 4;
+  background: #ff9a1dfa;
+  color: var(--just_white);
+  text-align: inherit;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.information-github li {
+  padding: 10px 30px 10px 0px;
+}
+/*#-#-3#-#-3#-*/
+footer{
+  width: 100vw;
+  height: 500px;
+}
+.img-footer{
+  width: 100%;
+  margin-top: -100px;
+z-index: 1;
+}
+.img-footer img{
+  width: 100%;
+height: 80%;
+}
+.date-footer{
+  background-color: var(--purple-background);
+  height: 600px;
+  width: 100vw;
+  margin-top: -340px;
+
 }

@@ -8,6 +8,34 @@
   }
 
   /*-------------FIRST-BLOCK---------------*/
+  /*window emergent info*/
+.window-text_info {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  background-color: var(--just_white);
+  height: 80%;
+  width: 85%;
+  left: 8%;
+  top: 100px;
+  border-radius: 10px;
+  overflow: scroll;
+}
+.window-text_info h2 {
+  color: var(--just_white);
+  padding: 20px;
+  text-align: center;
+  background-color: var(--green_slime);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.window-text_info p {
+  text-align: center;
+  color: var(--black);
+  padding: 20px 40px;
+  font-size: 20px;
+}
 
   .options {
     width: 7%;
@@ -104,16 +132,34 @@
     display: inline;
   }
   /*-----------------WHAT IS GIT-----------------*/
-  .what-is-git {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    direction: ltr;
-  }
-  .what_is_git,
-  .what_is_git2 {
-    grid-column-start: 2;
-    margin-top: 50px;
-  }
+/*what is git*/
+.what-is-git {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  /*display: grid;
+  grid-template-columns: 10% 80% 10%;*/
+    background-color: var(--purple-header-others);
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+
+}
+.what_is_git {
+  height: 720px;
+  width: 80%;
+  display: flex;
+  align-items: right;
+  flex-direction: column;
+  padding: 0px 20px;
+  margin: -30px 3%;
+  background-color: transparent;
+  color: var(--gray_soft);
+}
+
+.what_is_git2 {
+  display: none;
+}
 
   /*--------LIST INSTALL GIT--------*/
   .list__install-git {
@@ -127,10 +173,6 @@
     height: 40px;
     width: 150px;
   }
-  .install-git ul{
-    width: 90%;
-    right: 5%;
-  }
   .cat_list {
     height: 170px;
     width: 170px;
@@ -143,14 +185,14 @@
 ------------------------------------------------------*/
 .satellite-picture{
   position: absolute;
-  height: 350px;
-  width: 350px;
-  right: 0;
-  margin-top: -30px;
+  height: 450px;
+  width: 450px;
+
+  margin-top: -50px;
 }
 .satellite-picture-img{
-  height: 50%;
-  width: 50%;
+  height: 60%;
+  width: 60%;
 }
 .what_is-github .carousel__item,
 .what_is-github .carousel__item--hidden {
@@ -159,6 +201,7 @@
 .what_is-github{
   display: flex;
   align-items: center;
+  width: 90%;
 }
 .carousel__item {
   z-index: 0;
@@ -171,7 +214,7 @@
   transition: 400ms all;
   transform-origin: center left;
   position: relative;
-  margin: 30px;
+  margin: 5px;
 }
 .text-what-is_github {
   position: absolute;
@@ -233,11 +276,11 @@
 }
 
 .what_is-github .carousel__actions button#carousel__button--prev {
-  margin-left: 20px;
+left: 0;
 }
 
 .what_is-github .carousel__actions button#carousel__button--next {
-  margin-right: 20px;
+right: 0;
 }
 
 
@@ -258,11 +301,21 @@
     text-align: center;
     grid-row-start: 1;
     grid-column-start:1 ;
-    color: var(--just_white);
+      background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(62, 133, 238, 1) 1.1%,
+    rgba(227, 137, 240, 1) 40.7%,
+    rgba(243, 193, 124, 1) 79.7%
+  );
+    -webkit-background-clip: text;
+    color: transparent;
     background-color: transparent;
     margin: 0px 10px;
+    margin-top: 20px;
+    height: 100px;
   }
   .block-repo {
+    margin-top: -20px;
     margin: 0 auto;
     margin-bottom: 100px;
     grid-column-start: 1;
@@ -344,7 +397,7 @@
   }
   /*-----------------------------------------*/
 .wise-top{
-display: none; 
+display: none;
 }
   .blocks-commands-info_remote {
   width: 100vw;
@@ -428,4 +481,52 @@ display: none;
   height: 180px;
   padding: 10px;
   margin-left: -15px;
+}
+/*#########################3*/
+  .section-github-info {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .workflow-github {
+    grid-column-start: 1;
+    padding: 15px;
+    border: solid var(--gray_dark) 2px;
+    border-radius: 0px;
+  }
+  .workflow-github li{
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+  .information-github {
+    grid-column-start: 2;
+    text-align: inherit;
+    padding: 15px;
+    border-radius: 0px;
+  }
+  .information-github li {
+    padding-top: 10px;
+    margin-left: -20px;
+    padding-right: 0px;
+  }
+/*#-#-3#-#-3#-*/
+footer{
+  width: 100vw;
+  height: 400px;
+}
+.img-footer{
+  width: 100%;
+  margin-top: -40px;
+z-index: 1;
+}
+.img-footer img{
+  width: 100%;
+height: 80%;
+}
+.date-footer{
+  background-color: var(--purple-background);
+  height: 400px;
+  width: 100vw;
+  margin-top: -169px;
+
 }

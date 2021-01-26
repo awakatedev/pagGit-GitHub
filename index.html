@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="responsive.css" type="text/css">
     <link rel="stylesheet" href="vendor/normalize.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="vendor/fontawesome/fontawesome.css"/>
 
@@ -19,6 +18,8 @@
 <body>
 
  <!--#######DIV BAR MENU#######-->
+   <div id="cover-ctn-slides"></div>
+
  <section class="first-block">
 
             <!--right-->
@@ -46,7 +47,7 @@
           </div>
 
           <div class="reference">
-            <a href="#"><b>About GitHub</b></a>
+            <a href="#start-github"><b>About GitHub</b></a>
           </div>
       </div>
 
@@ -89,15 +90,37 @@
  <header>
    <!--menu-block-->
     <div class="menu" id="show-menu">
-        <nav>
-           <ul>
-              <li><a href="#"></a>gadudekflaeflia</li>
-              <li><a href="#"></a>amehbkeufuikfakf</li>
-              <li><a href="#"></a>ahefkujbfoewufbpow</li>
-           </ul>
-        </nav>
+       <div class="my-information">
+         <p>My GitHub account</p>
+        <div class="my-github">
+          <div class="img-my-github">
+            <img src="pictures/picture-profile.jpg" alt="img-picture-profile">
+          </div>
+          <p>jhscode10</p>
+
+        </div>
+      </div>
+    <div class="social-media">
+        <div class="social-media_account">
+          <div class="social-media_account_icon" id="icon-show_telegram">
+            <img src="pictures/" alt="">
+          </div>
+          <div class="social-media_account_info">
+            <p><a href="">@jhonathanjhs10</a></p>
+          </div>
+        </div>
+
+        <div class="social-media_account">
+            <div class="social-media_account_icon" id="icon-show_Email">
+              <img src="pictures/" alt="">
+            </div>
+            <div class="social-media_account_info">
+              <p><a href="">jhonathanjhs10@gmail.com</a></p>
+            </div>
+        </div>
     </div>
-    <div id="cover-ctn-menu"></div>
+
+    </div>
 
 <div class="ligths-background-header">
   <img src="./pictures/hero-glow.svg" alt="ligths-background" class="ligths_background_header">
@@ -141,18 +164,24 @@
     </div>
   </div>
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0a0825" fill-opacity="1" d="M0,160L60,176C120,192,240,224,360,208C480,192,600,128,720,133.3C840,139,960,213,1080,213.3C1200,213,1320,139,1380,101.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
   <section class="what-is-git" id="what-is-git">
+
+<!--<div class="ligths-background">
+  <img src="./pictures/" alt="ligths-background" >
+</div>-->
 
     <div class="what_is_git">
         <h1>What is Git?</h1>
         <p>Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers,
          but it can be used to track changes in any set of files. </br>Its goals include speed, data integrity, and support for distributed, non-linear workflowsclarification needed.
-         Git was created by Linus Torvalds in 2005 for development the Linux kernel, with other kernel developers contributing to its beginning.</br> Since 2005, Junio Hamano has been the core maintainer. As with most other distributed version-control systems,
+         Git was created by <b>Linus Torvalds</b> in 2005 for development the Linux kernel, with other kernel developers contributing to its beginning.</br> Since 2005, Junio Hamano has been the core maintainer. As with most other distributed version-control systems,
          and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server.
          Git is free and open-source software distributed under GNU General Public.</p>
     </div>
 
-    <div class="what_is_git2">
+   <div class="what_is_git2">
+     <h3>More about</h3>
       <p >Git is a type of version control system used to maintain code.</br>
          To gain a good understanding of why Git is useful, we must first understand the purpose of a version control system. In technology, version control systems are software tools used to track changes to code over time.
          Version control systems (VCS) store a list of all the changes made to code in a database, alongside who made those changes and a description of the changes made. In almost every project—large and small—version control plays a role.
@@ -162,18 +191,34 @@
     </div>
 
   </section>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0a0825" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,101.3C384,128,480,192,576,181.3C672,171,768,85,864,80C960,75,1056,149,1152,181.3C1248,213,1344,203,1392,197.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
   <!--list git installation-->
   <section class="list__install-git" id="list__install-git">
 
     <div class="block-list">
+      <h2>Install Git</h2>
+        <div class="install-git" id="install-button-one">
+          <summary><b>Install in Windows</b></summary>
+        </div>
 
-      <h2><b>Git installation</b></h2>
+        <div class="install-git" id="install-button-two">
+          <summary><b>Install in iOS</b></summary>
+        </div>
 
-      <div class="install-git">
-        <summary><b>Install in Windows</b></summary>
+        <div class="install-git" id="install-button-three">
+          <summary><b>Install in Linux or another Unix distro</b></summary>
+        </div>
+    </div>
 
-          <ul >
+    <div class="cat_list">
+      <img src="./pictures/mcefeeline.jpg" alt="cat list" class="cat_list">
+    </div>
+
+  <div class="window-text_info" id="install-slide-one">
+
+                <h2><b>Git installation Windows</b> <i class="fas fa-times" id="icon-close-slide"></i></h2>
+          <ul>
             <p>If you want to install git on Windows. You will need to go to a browser and download the git software on the <a href="https://git-scm.com/download/win">Git oficial page</br>
             </a> and follow the next steps.</p>
             <hr>
@@ -192,12 +237,11 @@
             <li><b>Step 13:</b> Depending on the version of Git you’re installing, it may offer to install experimental features.</br> At the time this article was written, the option to include interactive options was offered. Unless you are feeling adventurous, leave them unchecked and click Install.</li>
             <li><b>Step 14:</b> Once the installation is complete, tick the boxes to view the Release Notes or Launch Git Bash, then click Finish.</li>
           </ul>
-
       </div>
+      <div class="window-text_info" id="install-slide-two">
 
-      <div class="install-git">
-        <summary><b>Install in iOS</b></summary>
-          <ul>
+                   <h2><b>Git installation IOS</b> <i class="fas fa-times" id="icon-close-slide"></i></h2>
+            <ul>
             <p> iOS usually have Git for default in your MAC open Terminal and enter  the command <b>(git --version)</b>. If you see git version followed by numbers, i.e., git 2.5.4 then you are good to go. If you don't have Git installed follow the next steps.</p>
             <hr>
             <li><b>Step 1:</b> Open Safari and browse to the <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git developer site.</a></li>
@@ -210,9 +254,9 @@
             <p>Now open Terminal and enter git --version. You will see "git version 2.8.1".</p>
           </ul>
       </div>
+      <div class="window-text_info" id="install-slide-three">
 
-      <div class="install-git">
-        <summary><b>Install in Linux or another Unix distro</b></summary>
+                   <h2><b>Git installation Linux</b> <i class="fas fa-times" id="icon-close-slide"></i></h2>
           <ul>
             <p>If you will install Git on Linux via a binary installer through the package management tool that comes with your distribution.</p>
             <li>If you’re on <b>Fedora</b> or other closely related RPM-based distribution, like RHEL or <b>CentOS</b>, you can use dnf:</br><b>$ sudo dnf install git-all</b></li>
@@ -230,14 +274,7 @@
             <li>Slitaz:</br><b>$ tazpkg get-install git</b></li>
           </ul>
       </div>
-    </div>
-
-    <div class="cat_list">
-      <img src="./pictures/mcefeeline.jpg" alt="cat list" class="cat_list">
-    </div>
-
   </section>
-
        <!--section github-->
   <div class="block-recomendation">
     <div class="recomendation-git-github">
@@ -250,9 +287,9 @@
   </div>
 
   <!--CAROUSEL WHAT IS GITHUB-->
-    <div class="satellite-picture">
-      <img class="satellite-picture-img" src="pictures/satellite.webp" alt="">
-    </div>
+  <!--  <div class="satellite-picture">
+      <img class="satellite-picture-img" src="pictures/space.svg" alt="">
+    </div>-->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0a0825" fill-opacity="1" d="M0,160L60,176C120,192,240,224,360,208C480,192,600,128,720,133.3C840,139,960,213,1080,213.3C1200,213,1320,139,1380,101.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
   <section class="section-what-is_github">
     <div class="section-github" id="section-github">
@@ -293,24 +330,23 @@
        </div>
   </div>
 
-             <div class="text-what-is_github_info" id="slide-info_one">
-                <h2>What is Gitub? <i class="fas fa-times" id="icon-close-slide-one"></i></h2>
+             <div class="window-text_info" id="slide-info_one">
+                <h2>What is Gitub? <i class="fas fa-times" id="icon-close-slide"></i></h2>
                 <hr>
                 <p >It's a (collaborative development platform) to host projects using the Git version control sistem. it is mainly used for creating source code for computer programs. The software that runs GitHub was written in Ruby on Rails. ince junuary 2010, has operated under de name GitHub,inc.it was previously known as logical Awesome LLC. The code for projects hosted on GitHub is typically stored publicly.
                 On June 4, 2018 Microsoft bought GitHub for the amount of 7500 millions dollars, at the beginning the change of owner generated conserns and exit of some projects from this repository, howevwe they were not representative. GitHub continues to be the most important collaboration platform for Open Source projects.</p>
              </div>
-              <div class="text-what-is_github_info" id="slide-info_two">
-                <h2>Why use GitHub? <i class="fas fa-times" id="icon-close-slide-two"></i></h2>
+              <div class="window-text_info" id="slide-info_two">
+                <h2>Why use GitHub? <i class="fas fa-times" id="icon-close-slide"></i></h2>
                 <hr>
                 <p>A good GitHub profile can impress the interviwer. for thar reason Millions of developers use GitHub to share code and build businesses. In 2017, the Github community reached 24 million developers working across 67 million repositories.</p>
               </div>
-               <div class="text-what-is_github_info" id="slide-info_three">
-                <h2>GitHub isn't just for Developers <i class="fas fa-times" id="icon-close-slide-three"></i></h2>
+               <div class="window-text_info" id="slide-info_three">
+                <h2>GitHub isn't just for Developers <i class="fas fa-times" id="icon-close-slide"></i></h2>
                 <hr>
                 <p>All this talk about how GitHub is ideal for programers may have you believing that they are the only ones who will find it useful. Although it's a lot less common, you can actually use GitHub for any type of files. If you have a team that is constantly making changes to a word document for example, you could use GitHub as you version contol system.this practice isn't common, since there are better alternatives in most cases, but it's sometimes to keep in mind. </p>
               </div>
 
-              <div id="cover-ctn-slides"></div>
    </div>
  </section>
              <!--SECTION HOW USE GIT-->
@@ -326,18 +362,20 @@
 
       <div class="repo">
         <h2>Repository</h2>
-        <p>A repository (usually abbreviated to "repo")  is a storage location for software packages. Often a table of contents is stored, as well as metadata. Repositories group packages so is a location where all the files for a particular project are stored. Each projects has its own repo, and you can access it with a unique URL.</p>
+        <p>A repository (usually abbreviated to "repo") is a storage location for software packages. Often a table of contents is stored, as well as metadata. Repositories group packages so is a location where all the files for a particular project are stored. Each projects has its own repo, and you can access it with a unique URL.</p>
 
-        <div class="git-configure">
+        <div class="git-configure" id="button-configure">
           <summary><b>Configure your Git</b> <i class="fas fa-angle-down"></i></summary>
-          <ul>
+       </div>
+      </div>
+    </div>
+    <div class="window-text_info" id="slide-configure">
+       <h2>Configure your Git <i class="fas fa-times" id="icon-close-slide"></i></h2>
             <p>Remember that Git is optimized for teamwork, therefore, we must give you a little information about us. We should not do it every time we execute a command, it is enough to execute the following commands only once with your information:
                <b class="git_command">$ git config --global user.email "your@email.com"</b>
                <b class="git_command">$ git config --global user.name "Your Name"</b>
                There are many other Git configurations that you can find by running the git config --list command (or just git config for a more detailed explanation).</p>
-          </ul>
-       </div>
-      </div>
+               <img class="picture-config-l" src="pictures/screnshot-gitconfig.png" alt="">
     </div>
   </section>
 <svg class="wise-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0a0825" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,101.3C384,128,480,192,576,181.3C672,171,768,85,864,80C960,75,1056,149,1152,181.3C1248,213,1344,203,1392,197.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
@@ -414,7 +452,7 @@
 <svg class="wise-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0a0825" fill-opacity="1" d="M0,160L60,176C120,192,240,224,360,208C480,192,600,128,720,133.3C840,139,960,213,1080,213.3C1200,213,1320,139,1380,101.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
   <section class="blocks-commands-info_remote">
     <div class="information_two">
-        <h2>Synchronizing changes betwen the local repository with the remote and cloning repositories:</h2>
+        <h2>Synchronizing the local repository to can do push and pull with the remote and how clone repositories:</h2>
 
       <div id="blocks-commands-info_remote_config">
           <img src="pictures/slide_remote.jpg" alt="">
@@ -436,8 +474,8 @@
 </div>
       </div>
 
-          <div class="command_info_remote_config_style" id="commad-info_remote_config">
-            <h2>Make your remote repository and synchronizing with the local <i class="fas fa-times" id="icon-close-slides-remote"></i></h2>
+          <div class="window-text_info" id="commad-info_remote_config">
+            <h2>Make your remote repository and synchronizing with the local <i class="fas fa-times" id="icon-close-slide"></i></h2>
              <p>To synchronize your remote repository with your local one and be able to push your project, you only need to create a new repository in your GitHub account with the name of your project, then you will click on where the file icon is and copy the repository URL . next in your terminal you will write the following command.
                <img src="pictures/new-repository.png" alt="new-repo" class="img-new_repo">
                <img src="pictures/URL-repo.png" alt="URL_repo" class="img-URL_repo">
@@ -451,15 +489,38 @@
              <b class="git_command">$ ssh-add ~/.ssh/id_rsa</b>
              </p>
           </div>
-
-          <div id="cover-ctn-slide"></div>
   </section>
   <svg class="wise-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0a0825" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,101.3C384,128,480,192,576,181.3C672,171,768,85,864,80C960,75,1056,149,1152,181.3C1248,213,1344,203,1392,197.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+  <section class="section-github-info" id="start-github">
+    <div class="workflow-github">
+      <h2>Basic work-flow with GitHub</h2>
+      <p>The usually work-flow with GitHub is make a remote repository of us proyect, next to synchronized with us local repository do push at the master branch when be all ready to the "production" if exist any "bug" usually we make a new branch whre we will to repare the problems and next to do a merge and following a push.
+      but what happen if you want colaborate in any proyect? or if you need work in the proyecto another people?</p>
+      <h3>Fist case:</h3>
+      <p>if you want colaborate in another proyect but you are not a member of the proyect you can do a (fork) of the proyect and there you will can make your changes, next to you can do a "pull request" this go'll send a menssage a the DevOps of the proyect an he can decide if aprobate the merge of your changes at the proyect or reyect your pull request.</p>
+    </div>
+    <div class="information-github">
+      <h2>More about</h2>
+      <p></p>
+    </div>
+  </section>
 </main>
+<footer>
+<div class="img-footer">
+  <img src="pictures/footer-illustration.webp" alt="">
+</div>
+<div class="date-footer">
+  <h3></h3>
+
+</div>
+</footer>
 
 
 <script src="src/browser.js"></script>
 <script src="src/options.js"></script>
+<script src="src/slides.js"></script>
+
 
 </body>
 </html>
