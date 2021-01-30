@@ -4,7 +4,9 @@
 * {
   margin: 0px;
 }
-h2, h3, h4{
+h2,
+h3,
+h4 {
   margin-bottom: 5px;
 }
 :root {
@@ -60,16 +62,16 @@ h2, h3, h4{
   padding: 20px 40px;
   font-size: 20px;
 }
-.window-text_info p a{
-color: var(--black);
-text-decoration: underline;
+.window-text_info p a {
+  color: var(--black);
+  text-decoration: underline;
 }
-.window-text_info li{
+.window-text_info li {
   list-style: none;
   padding: 10px 20px;
   font-size: 20px;
 }
-svg{
+svg {
   width: 100vw;
 }
 /*--------------------------------------------
@@ -305,36 +307,36 @@ ul:hover {
     opacity: 1;
   }
 }
-.my-information{
-  margin: 10% auto;
+.my-information {
+  margin: 5% auto;
   display: flex;
   flex-direction: column;
   padding: 5px;
   width: 70%;
   text-align: center;
 }
-.my-information p{
+.my-information p {
   padding: 10px;
   color: var(--gray);
 }
-.my-github{
+.my-github {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.my-github p{
+.my-github p {
   font-size: 20px;
-  color: var(--black)
+  color: var(--black);
 }
-.img-my-github{
+.img-my-github {
   height: 120px;
   width: 120px;
   border-radius: 100px;
   margin-left: 5px;
   box-shadow: 2px 7px 4px 4px rgba(89, 73, 30, 0.15);
 }
-.img-my-github img{
+.img-my-github img {
   height: 100%;
   width: 100%;
   border-radius: 100px;
@@ -342,72 +344,39 @@ ul:hover {
 }
 .social-media {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin: 10px;
   text-align: right;
   font-size: 15px;
   display: flex;
   align-items: center;
-  flex-direction: column;
+
   width: 90%;
 }
-.block-social_media{
-  display: grid;
-  grid-template-rows: 20% 5% 20% 5% 20% 5% 20% 5%;
+.block-social_media {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  height: 300px;
 }
-.social-media_account_telegram{
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-  grid-row-start: 1;
-  margin: 0 auto;
+.social-media_account_telegram {
+  margin: 10px auto;
+  width: 40%;
+  height: 50px;
 }
-.social-media_account_email{
-  display: flex;
-  justify-content: flex-start;
-  grid-row-start: 3;
-  margin: 0 auto;
+.social-media_account_linkedin {
+  margin: 10px auto;
+  width: 40%;
+  height: 50px;
 }
-.social-media_account_icon{
-  height: 45px;
-  width: 45px;
-  border-radius: 40px;
-  background-color: var(--black);
-  position: absolute;
-  z-index: 1;
-}
-.social-media_account_info{
-  display: flex;
-  align-items: center;
-  background-color: var(--blue_sky);
-  padding: 10px;
-  padding-left: 50px;
-  margin-bottom: 10px;
-  border-radius: 40px;
+.social-media_account_icon button {
+  background-color: yellow;
+  width: 100%;
+  height: 50px;
   border: none;
-  height: 25px;
-  animation-name: animateleftmedia;
-  animation-duration: 0.7s;
+  border-radius: 5px;
+  box-shadow: 2px 3px 3px 3px rgba(89, 73, 30, 0.15);
 }
-@keyframes animateleftmedia {
-  from {
-    left: -600px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-#show-my-telegram{
-display: none;
-}
-#show-my-email{
-display: none;
 
-}
 /*-------------------------------------------
 ---------------------HEADER------------------
 ---------------------------------------------*/
@@ -502,7 +471,6 @@ a {
 }
 .picture__octocat {
   position: absolute;
-  /* margin-top: 248px;*/
   max-width: 100%;
   width: 450px;
   height: 430px;
@@ -618,7 +586,7 @@ a {
   margin-bottom: 0;
   background-color: var(--purple-header-others);
   width: 100vw;
-  height: 550px;
+  height: 600px;
   display: flex;
   justify-content: center;
 }
@@ -629,13 +597,13 @@ a {
   align-items: right;
   flex-direction: column;
   padding: 20px 20px;
-  margin: -10px 5%;
+  margin: -20px 8%;
   background-color: transparent;
   color: var(--gray_soft);
   z-index: 3;
 }
-.what_is_git h1{
-    background-image: radial-gradient(
+.what_is_git h1 {
+  background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(62, 133, 238, 1) 1.1%,
     rgba(227, 137, 240, 1) 40.7%,
@@ -647,8 +615,8 @@ a {
 }
 .what_is_git2 {
   position: relative;
-  right: 3%;
-  top: 180px;
+  right: 8%;
+  top: 200px;
   width: 35%;
   height: 350px;
   border-radius: 13px;
@@ -665,22 +633,30 @@ a {
   margin-top: 10px;
   font-size: 95%;
   text-align: inherit;
-
 }
 .what_is_git p {
   margin-top: 5px;
   font-size: 110%;
   text-align: inherit;
 }
-.ligths-background{
+.img-work_people {
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  right: 16%;
+}
+.img-work_people img {
+  height: 100%;
+  widows: 100%;
+}
+.ligths-background {
   z-index: 0;
   position: absolute;
-  width:130%
+  width: 130%;
 }
-.ligths-background img{
-height: 100%;
-width: 100%;
-
+.ligths-background img {
+  height: 100%;
+  width: 100%;
 }
 /*--------------list to install git--------------*/
 .list__install-git {
@@ -740,16 +716,6 @@ width: 100%;
 /*-----------------------------------------------
 ------------SECTION WHAT IS GITHUB----------------
 -------------------------------------------------*/
-/*.satellite-picture{
-  position: absolute;
-  height: 450px;
-  width: 450px;
-  right: 70px;
-}
-.satellite-picture-img{
-  height: 100%;
-  width: 100%;
-}*/
 .section-what-is_github {
   height: 500px;
   width: 100vw;
@@ -944,7 +910,7 @@ width: 100%;
 .git-configure .git_command {
   width: 85%;
 }
-.picture-config-l{
+.picture-config-l {
   height: 300px;
   width: 80%;
   margin-left: 10%;
@@ -1137,7 +1103,7 @@ ul:hover {
   width: 100%;
 }
 /*##########################*/
-.section-github-info{
+.section-github-info {
   margin-top: 50px;
   display: grid;
   grid-template-columns: 8% 40% 4% 40% 8%;
@@ -1163,30 +1129,34 @@ ul:hover {
 .information-github li {
   padding: 10px 30px 10px 0px;
 }
+.information-github img {
+  height: 180px;
+  width: 180px;
+  margin: 5px auto;
+}
+
 /*#-#-#-FOOTER-#-#-#-*/
-footer{
+footer {
   width: 100vw;
   height: 500px;
 }
-.img-footer{
+.img-footer {
   width: 100%;
-margin-top: -100px;
+  margin-top: -70px;
 }
-.wise-footer{
+.wise-footer {
   width: 100%;
   margin-top: 50px;
-
 }
-.img-footer img{
+.img-footer img {
   width: 100%;
-height: 90%;
-z-index: 1;
-position: absolute;
+  height: 90%;
+  z-index: 1;
+  position: absolute;
 }
-.date-footer{
+.date-footer {
   background-color: var(--purple-background);
   height: 400px;
   width: 100vw;
   margin-top: -10px;
-
 }
