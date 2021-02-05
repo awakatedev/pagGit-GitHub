@@ -43,15 +43,12 @@ function close_browser() {
   }
 }
 //executing function filtrer options
-document
-  .getElementById("inputSearch")
-  .addEventListener("keyup", internal_browser);
+inputSearch.addEventListener("keyup", function () {
+  if ((box_search.display = "block")) {
+  }
+  let filter = inputSearch.value.toUpperCase();
+  let li = box_search.getElementsByTagName("li");
 
-function internal_browser() {
-  filter = inputSearch.value.toUpperCase();
-  li = box_search.getElementsByTagName("li");
-
-  //selection for filtrer "li"
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     textValue = a.textContent || a.innerText;
@@ -67,4 +64,4 @@ function internal_browser() {
       li[i].style.display = "none";
     }
   }
-}
+});
